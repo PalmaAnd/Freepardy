@@ -1,0 +1,216 @@
+{
+    "categories": [
+        {
+            "id": "573c7595-4c48-4d43-9d9e-954d48255ece",
+            "title": "Kräuter",
+            "questions": [
+                {
+                    "id": "fe9ddbd5-f78f-49a2-9fd3-535447a1be28",
+                    "value": 200,
+                    "question": "Dieses Kraut wird oft mit italienischer Küche assoziiert.",
+                    "answer": "Basilikum?",
+                    "used": false
+                },
+                {
+                    "id": "ae49d239-348a-4e5a-981f-b06e26bce314",
+                    "value": 400,
+                    "question": "Ein Klassiker in der deutschen Küche und wichtig für Gurken.",
+                    "answer": "Dill?",
+                    "used": false
+                },
+                {
+                    "id": "96f41a71-a234-4bbd-8085-56134d9017e8",
+                    "value": 600,
+                    "question": "Dieses Kraut wirkt beruhigend und hilft beim Einschlafen.",
+                    "answer": "Baldrian?",
+                    "used": false
+                },
+                {
+                    "id": "5906708a-ca2c-4c60-ae62-49fec39efaf1",
+                    "value": 800,
+                    "question": "Ein Kraut mit intensivem Anisgeschmack.",
+                    "answer": "Estragon?",
+                    "used": false
+                },
+                {
+                    "id": "fe765108-41d6-4a07-aaf5-a0b1b34fe528",
+                    "value": 1000,
+                    "question": "Dieses mediterrane Kraut ist robust und winterhart.",
+                    "answer": "Rosmarin?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "caa9fcaf-b9f9-4f75-8117-f2587fd2b644",
+            "title": "Hochzeit",
+            "questions": [
+                {
+                    "id": "8f6d6a40-4098-4c72-83bb-70c02202d9f4",
+                    "value": 200,
+                    "question": "Dieser Monat gilt traditionell als Hochzeitsmonat.",
+                    "answer": "Juni?",
+                    "used": false
+                },
+                {
+                    "id": "877afdc6-b803-471c-b630-11be799d6cd9",
+                    "value": 400,
+                    "question": "Dieser Gegenstand wird bei der Trauung an den Finger gesteckt.",
+                    "answer": "der Ehering?",
+                    "used": false
+                },
+                {
+                    "id": "f11839e7-13b9-40f9-ab1f-c9c3a0dc60d6",
+                    "value": 600,
+                    "question": "Die Person, die das Brautkleid trägt.",
+                    "answer": "die Braut?",
+                    "used": false
+                },
+                {
+                    "id": "dcd55d4b-4101-4927-b5e1-97349f69a816",
+                    "value": 800,
+                    "question": "Traditionell spricht diese Person die Traurede.",
+                    "answer": "der Pfarrer oder Standesbeamte?",
+                    "used": false
+                },
+                {
+                    "id": "7557c7cd-a4ab-47da-89d9-66c8314c6684",
+                    "value": 1000,
+                    "question": "Diese Farbe trägt die Braut traditionell.",
+                    "answer": "Weiß?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "389a98ef-4a28-4ff0-8777-052348e330f9",
+            "title": "Feminismus",
+            "questions": [
+                {
+                    "id": "1a68c899-8046-47f3-af30-2cc6026a83b6",
+                    "value": 200,
+                    "question": "Diese deutsche Autorin schrieb 'Der Ursprung der Welt'.",
+                    "answer": "Alice Schwarzer?",
+                    "used": false
+                },
+                {
+                    "id": "ad51cc49-be28-4248-8794-1be17c302360",
+                    "value": 400,
+                    "question": "Diese Bewegung kämpfte für das Frauenwahlrecht.",
+                    "answer": "die Suffragettenbewegung?",
+                    "used": false
+                },
+                {
+                    "id": "ec4c891a-8e27-4d2b-be04-119030ccaf59",
+                    "value": 600,
+                    "question": "Diese feministische Welle begann in den 1960ern.",
+                    "answer": "die zweite Welle?",
+                    "used": false
+                },
+                {
+                    "id": "98fbb8e5-3159-4f24-9cef-359df8d7d8b2",
+                    "value": 800,
+                    "question": "Diese Philosophin schrieb 'Das andere Geschlecht'.",
+                    "answer": "Simone de Beauvoir?",
+                    "used": false
+                },
+                {
+                    "id": "0dd60889-f157-4d93-ac65-f8779ae83330",
+                    "value": 1000,
+                    "question": "Dieser Begriff beschreibt ungleiche Bezahlung für gleiche Arbeit.",
+                    "answer": "Gender Pay Gap?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "86b18585-dbc3-4790-862c-d8209417b607",
+            "title": "Gilmore Girls",
+            "questions": [
+                {
+                    "id": "bd539098-85c5-440f-89fd-41e9a2b65531",
+                    "value": 200,
+                    "question": "Der Name der Tochter von Lorelai Gilmore.",
+                    "answer": "Rory?",
+                    "used": false
+                },
+                {
+                    "id": "d725a807-1e85-4dcb-9e88-4f59d597dcad",
+                    "value": 400,
+                    "question": "Die Stadt, in der die Serie spielt.",
+                    "answer": "Stars Hollow?",
+                    "used": false
+                },
+                {
+                    "id": "39cd8c53-932a-4e78-a852-1d2b3adb6fc0",
+                    "value": 600,
+                    "question": "Dieses Getränk ist Lorelais Lieblingsgetränk.",
+                    "answer": "Kaffee?",
+                    "used": false
+                },
+                {
+                    "id": "fce60f2a-65f1-4bd6-99b8-34785ceba4a0",
+                    "value": 800,
+                    "question": "Lorelai betreibt dieses Hotel.",
+                    "answer": "das Dragonfly Inn?",
+                    "used": false
+                },
+                {
+                    "id": "ad232da8-5e09-4085-b8af-db8a8c1fd21d",
+                    "value": 1000,
+                    "question": "Diese Schauspielerin spielt Lorelai.",
+                    "answer": "Lauren Graham?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "513cd914-180e-44b1-87df-524d568d7b3b",
+            "title": "Literatur",
+            "questions": [
+                {
+                    "id": "c5ea26a9-7514-497a-a335-696e81ab9276",
+                    "value": 200,
+                    "question": "Diese Romanfigur lebt in einem Land mit sprechenden Tieren und weißen Hexen.",
+                    "answer": "Lucy Pevensie?",
+                    "used": false
+                },
+                {
+                    "id": "154690ce-7028-4288-a7af-f80b35ebb6a6",
+                    "value": 400,
+                    "question": "Dieser Autor schrieb 'Der Prozess'.",
+                    "answer": "Franz Kafka?",
+                    "used": false
+                },
+                {
+                    "id": "3f852c6a-2e87-4592-8c7b-6a4e36223686",
+                    "value": 600,
+                    "question": "Goethes berühmte Tragödie über einen Pakt mit dem Teufel.",
+                    "answer": "Faust?",
+                    "used": false
+                },
+                {
+                    "id": "0dd63a9d-8b06-4c13-86a2-281c6163c523",
+                    "value": 800,
+                    "question": "Dieses Buch beginnt mit 'Call me Ishmael.'",
+                    "answer": "Moby Dick?",
+                    "used": false
+                },
+                {
+                    "id": "e3bef623-7418-41ae-96ef-ce3e35610a3d",
+                    "value": 1000,
+                    "question": "Autor von 'Der Steppenwolf'.",
+                    "answer": "Hermann Hesse?",
+                    "used": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 30,
+        "finalJeopardyCategory": "Programmieren",
+        "finalJeopardyQuestion": "Wie wird beim Programmieren ein Wert genannte, der nur Wahr oder Falsch sein kann?",
+        "finalJeopardyAnswer": "Boolean"
+    }
+}

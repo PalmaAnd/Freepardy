@@ -1,0 +1,216 @@
+{
+    "categories": [
+        {
+            "id": "5c928a4f-f7ce-47db-933e-ec27b6f948b6",
+            "title": "Twilight",
+            "questions": [
+                {
+                    "id": "9391b6ec-701f-4145-b5dd-1b3f7795ee63",
+                    "value": 200,
+                    "question": "Diese Vampirfigur verliebt sich in Bella Swan.",
+                    "answer": "Edward Cullen?",
+                    "used": false
+                },
+                {
+                    "id": "588010ce-ea49-42fd-8f8d-e8bba516a270",
+                    "value": 400,
+                    "question": "Diese Werwolf-Figur konkurriert um Bellas Herz.",
+                    "answer": "Jacob Black?",
+                    "used": false
+                },
+                {
+                    "id": "a2047c55-cd81-4ad4-9d29-68d290066030",
+                    "value": 600,
+                    "question": "In diesem US-Bundesstaat spielt die Twilight-Saga hauptsächlich.",
+                    "answer": "Washington?",
+                    "used": false
+                },
+                {
+                    "id": "c885939e-2873-4151-ba86-2458f9c8ce6e",
+                    "value": 800,
+                    "question": "Die Autorin der Twilight-Reihe.",
+                    "answer": "Stephenie Meyer?",
+                    "used": false
+                },
+                {
+                    "id": "7b74cc50-435b-40e5-8a6c-d4b7d8e9c617",
+                    "value": 1000,
+                    "question": "Diese Fähigkeit besitzt Alice Cullen.",
+                    "answer": "Zukunftsvision?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "6f599db8-0330-4cca-aced-1f4ae0296066",
+            "title": "Taylor Swift",
+            "questions": [
+                {
+                    "id": "3e3f0ef5-2a1d-492f-827a-829e50b61695",
+                    "value": 200,
+                    "question": "Dieses Album von Taylor Swift gewann 2021 den Grammy für das beste Album des Jahres.",
+                    "answer": "Folklore?",
+                    "used": false
+                },
+                {
+                    "id": "74c4e039-1657-45c0-bdf0-838b587c2f7a",
+                    "value": 400,
+                    "question": "Dieses Lied enthält die Zeile 'You belong with me'.",
+                    "answer": "You Belong With Me",
+                    "used": false
+                },
+                {
+                    "id": "0612de72-2ea8-43c1-a844-7f23416a0726",
+                    "value": 600,
+                    "question": "Ihr Spitzname ist auch ein Tier.",
+                    "answer": "Tay-Tay oder Swiftie?",
+                    "used": false
+                },
+                {
+                    "id": "ab00b9bc-6734-4982-bbf1-f4a6880f2742",
+                    "value": 800,
+                    "question": "Taylor begann ihre Karriere in diesem Musikgenre.",
+                    "answer": "Country?",
+                    "used": false
+                },
+                {
+                    "id": "a963620d-1cb4-4df1-b892-108098cbb108",
+                    "value": 1000,
+                    "question": "Diese Tournee war ein weltweiter Erfolg 2023.",
+                    "answer": "The Eras Tour?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "f5d9532b-4158-4497-b80d-71d10d78030b",
+            "title": "Europäische Königshäuser",
+            "questions": [
+                {
+                    "id": "165ca4be-9287-4749-a439-e0045f258c5b",
+                    "value": 200,
+                    "question": "Diese Monarchin regierte das Vereinigte Königreich über 70 Jahre.",
+                    "answer": "Queen Elizabeth II?",
+                    "used": false
+                },
+                {
+                    "id": "028d1064-0594-48cf-a560-9ae7f7c8fe5d",
+                    "value": 400,
+                    "question": "Das Königshaus dieses Landes heißt 'Oranien-Nassau'.",
+                    "answer": "die Niederlande?",
+                    "used": false
+                },
+                {
+                    "id": "ba9efca5-7692-4231-8473-b23eb9a94a69",
+                    "value": 600,
+                    "question": "Dieser spanische König ist mit Königin Letizia verheiratet.",
+                    "answer": "Felipe VI?",
+                    "used": false
+                },
+                {
+                    "id": "9cb9839a-1059-43b8-92d3-0ddc652123f7",
+                    "value": 800,
+                    "question": "Diese royale Hochzeit fand 2011 in London statt.",
+                    "answer": "die Hochzeit von William und Kate?",
+                    "used": false
+                },
+                {
+                    "id": "fa944db2-e1a0-4b95-902b-547ae5459430",
+                    "value": 1000,
+                    "question": "In diesem Land residiert die Königin Margrethe II.",
+                    "answer": "Dänemark?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "ff01539d-40c9-4eff-936d-fbb1ae5dcd9c",
+            "title": "Ernährung",
+            "questions": [
+                {
+                    "id": "1e9a7026-6006-4334-ba39-1db8afce8436",
+                    "value": 200,
+                    "question": "Dieses Vitamin wird hauptsächlich durch Sonnenlicht gebildet.",
+                    "answer": "Vitamin D?",
+                    "used": false
+                },
+                {
+                    "id": "3615e661-75cc-4cde-bf77-6175e59def87",
+                    "value": 400,
+                    "question": "Diese Diät vermeidet komplett Kohlenhydrate.",
+                    "answer": "Keto?",
+                    "used": false
+                },
+                {
+                    "id": "5b4268e3-41b6-4ae0-a981-b1b4ee265e1c",
+                    "value": 600,
+                    "question": "Diese Nährstoffgruppe liefert am meisten Energie pro Gramm.",
+                    "answer": "Was sind Fette?",
+                    "used": false
+                },
+                {
+                    "id": "f3605d17-eee5-4763-9efe-f645183ac9ab",
+                    "value": 800,
+                    "question": "Diese Ernährung basiert ausschließlich auf pflanzlichen Produkten.",
+                    "answer": "Veganismus?",
+                    "used": false
+                },
+                {
+                    "id": "78e16151-665f-477f-a425-a12ed642f547",
+                    "value": 1000,
+                    "question": "Dieses Mineral ist wichtig für gesunde Knochen.",
+                    "answer": "Kalzium?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "3a362aa0-4320-46df-b2cb-f2a2f0357f4e",
+            "title": "ABBA",
+            "questions": [
+                {
+                    "id": "67f63cf1-cb60-4aa2-8cf6-6b63d8abd896",
+                    "value": 200,
+                    "question": "ABBA kommt aus diesem Land.",
+                    "answer": "Schweden?",
+                    "used": false
+                },
+                {
+                    "id": "340c35ab-eec2-4944-bb29-88f8dcdfd423",
+                    "value": 400,
+                    "question": "Dieser ABBA-Hit beginnt mit den Worten 'I've been cheated by you...'",
+                    "answer": "Mamma Mia",
+                    "used": false
+                },
+                {
+                    "id": "7b9fac33-5b68-490d-a50c-f8e1f9242b45",
+                    "value": 600,
+                    "question": "Das Musical basierend auf ABBA-Songs.",
+                    "answer": "Mamma Mia!",
+                    "used": false
+                },
+                {
+                    "id": "d5352203-3194-4660-8582-d42dce44a598",
+                    "value": 800,
+                    "question": "So heißt das erste Studioalbum von ABBA.",
+                    "answer": "Ring Ring",
+                    "used": false
+                },
+                {
+                    "id": "8aa33a61-6b57-4eab-b69d-f055ee06cdfe",
+                    "value": 1000,
+                    "question": "ABBA gewann diesen Wettbewerb 1974.",
+                    "answer": "der Eurovision Song Contest?",
+                    "used": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 30,
+        "finalJeopardyCategory": "Sankt Pauls",
+        "finalJeopardyQuestion": "Wie wird der Paulsner Kirchturm noch genannt?",
+        "finalJeopardyAnswer": "Der Dom auf dem Lande"
+    }
+}

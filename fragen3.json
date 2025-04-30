@@ -1,0 +1,216 @@
+{
+    "categories": [
+        {
+            "id": "7b405212-1a28-44a3-89b3-bdcd6f9abcce",
+            "title": "Falco",
+            "questions": [
+                {
+                    "id": "a458d5bd-fcdc-48ff-b00c-598f8962363e",
+                    "value": 200,
+                    "question": "Falcos bürgerlicher Name.",
+                    "answer": "Johann Hölzel?",
+                    "used": false
+                },
+                {
+                    "id": "940397e4-02da-410a-a35b-44382d16a089",
+                    "value": 400,
+                    "question": "Mit diesem Lied wurde Falco international bekannt.",
+                    "answer": "Rock Me Amadeus",
+                    "used": false
+                },
+                {
+                    "id": "065a0d3c-4cba-40f7-873d-89aa05ac099c",
+                    "value": 600,
+                    "question": "Falco stammte aus dieser Stadt.",
+                    "answer": "Wien?",
+                    "used": false
+                },
+                {
+                    "id": "fa82ebde-1626-476f-9b44-2361e269c15b",
+                    "value": 800,
+                    "question": "In diesem Jahr verstarb Falco.",
+                    "answer": "1998?",
+                    "used": false
+                },
+                {
+                    "id": "be0b6cdb-2103-43cc-be2b-82782ad41ba9",
+                    "value": 1000,
+                    "question": "Dieses Lied von Falco handelt von einer Prostituierten.",
+                    "answer": "Jeanny",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "1d0d3b5d-3ecf-4518-8c78-763828f66879",
+            "title": "Berge in Europa",
+            "questions": [
+                {
+                    "id": "b4c6bfc5-a382-4242-9965-024b3e1a0d96",
+                    "value": 200,
+                    "question": "Der höchste Berg der Alpen.",
+                    "answer": "der Mont Blanc?",
+                    "used": false
+                },
+                {
+                    "id": "8532267f-f38c-4527-9aa4-8c88dd968e1a",
+                    "value": 400,
+                    "question": "Dieser Berg liegt in Deutschland und ist sehr bekannt.",
+                    "answer": "die Zugspitze?",
+                    "used": false
+                },
+                {
+                    "id": "ccff2806-2738-49d0-9987-d8cc890884ec",
+                    "value": 600,
+                    "question": "Dieses Gebirge trennt Europa von Asien.",
+                    "answer": "Was sind der Ural?",
+                    "used": false
+                },
+                {
+                    "id": "ca7e6aae-ce7f-4f21-95f5-89707f7e7e35",
+                    "value": 800,
+                    "question": "Der Großglockner liegt in diesem Land.",
+                    "answer": "Österreich?",
+                    "used": false
+                },
+                {
+                    "id": "8c015db1-1284-433a-8628-468d3aaded09",
+                    "value": 1000,
+                    "question": "Dieses Land ist komplett von Alpen umgeben.",
+                    "answer": "die Schweiz?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "02df5f9e-6be1-40f0-9417-64620e451262",
+            "title": "Autos",
+            "questions": [
+                {
+                    "id": "718a72e2-f455-47e2-99ff-8c4bf423a145",
+                    "value": 200,
+                    "question": "Diese deutsche Marke stellt den Golf her.",
+                    "answer": "Volkswagen?",
+                    "used": false
+                },
+                {
+                    "id": "34aca15e-4de0-4a2d-bd9a-6e99ce2b1416",
+                    "value": 400,
+                    "question": "Dieses italienische Auto ist bekannt für Luxus und Geschwindigkeit.",
+                    "answer": "Ferrari?",
+                    "used": false
+                },
+                {
+                    "id": "ecc04bae-4846-401e-965d-76de9b2539bb",
+                    "value": 600,
+                    "question": "Das weltweit erste Auto wurde von ihm gebaut.",
+                    "answer": "Karl Benz?",
+                    "used": false
+                },
+                {
+                    "id": "ebeeeb3d-1ef2-47af-99c0-1a4713962ec7",
+                    "value": 800,
+                    "question": "Dieses Kürzel steht für Elektromobilität bei BMW.",
+                    "answer": "BMW i?",
+                    "used": false
+                },
+                {
+                    "id": "c1e8cba1-1e0d-4bc9-9a12-0fcc2a1f0e32",
+                    "value": 1000,
+                    "question": "Dieses Auto war eines der meistverkauften weltweit.",
+                    "answer": "der Toyota Corolla?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "928470e9-d2f8-484f-a6b6-6274bcce2cd0",
+            "title": "Österreich",
+            "questions": [
+                {
+                    "id": "24b40407-35d8-45e2-9847-860b080ab318",
+                    "value": 200,
+                    "question": "Die Hauptstadt von Österreich.",
+                    "answer": "Wien?",
+                    "used": false
+                },
+                {
+                    "id": "3f34f220-456e-47cf-8b4f-07514ef43b51",
+                    "value": 400,
+                    "question": "Dieses Gericht besteht aus Kalbfleisch und Panade.",
+                    "answer": "Wiener Schnitzel?",
+                    "used": false
+                },
+                {
+                    "id": "7c73faa7-984d-4b49-89c1-fb3ba158e71b",
+                    "value": 600,
+                    "question": "Dieses Musikgenie wurde in Salzburg geboren.",
+                    "answer": "Mozart?",
+                    "used": false
+                },
+                {
+                    "id": "a85e80a7-5c37-4cb3-986c-31577529d812",
+                    "value": 800,
+                    "question": "So heißt das österreichische Parlament.",
+                    "answer": "der Nationalrat?",
+                    "used": false
+                },
+                {
+                    "id": "e7c74b87-d3a6-4af7-9af7-7ca85e5ba38a",
+                    "value": 1000,
+                    "question": "In diesen Bergen liegt Tirol.",
+                    "answer": "Was sind die Alpen?",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "972d4a1f-8922-4fd8-8586-6491229a6553",
+            "title": "Mode",
+            "questions": [
+                {
+                    "id": "235fabaa-9e6d-41bb-bd9f-65104678542a",
+                    "value": 200,
+                    "question": "Dieser französische Designer ist bekannt für das 'kleine Schwarze'.",
+                    "answer": "Coco Chanel?",
+                    "used": false
+                },
+                {
+                    "id": "e7bb56ad-bdcb-41da-a93c-4d60c88ffa28",
+                    "value": 400,
+                    "question": "Dieses jährliche Ereignis zeigt Mode in Paris.",
+                    "answer": "die Paris Fashion Week?",
+                    "used": false
+                },
+                {
+                    "id": "8ebf3a18-6a08-48bb-8cc2-5fa85cac70a6",
+                    "value": 600,
+                    "question": "Diese Hose ist nach einer italienischen Stadt benannt.",
+                    "answer": "Jeans (Genua)?",
+                    "used": false
+                },
+                {
+                    "id": "2e2f72e6-025b-419c-8d6a-97a3ba5b8c3b",
+                    "value": 800,
+                    "question": "Dieser Begriff beschreibt nachhaltige Kleidung.",
+                    "answer": "Fair Fashion?",
+                    "used": false
+                },
+                {
+                    "id": "796a000b-ab3b-466a-8021-2ccde4ea31c2",
+                    "value": 1000,
+                    "question": "Dieses Accessoire trägt man am Hals.",
+                    "answer": "ein Schal?",
+                    "used": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 30,
+        "finalJeopardyCategory": "TV Serie",
+        "finalJeopardyQuestion": "In welcher TV Serie gibt es Charaktere namens Ross, Rachel und Joey?",
+        "finalJeopardyAnswer": "Friends"
+    }
+}
