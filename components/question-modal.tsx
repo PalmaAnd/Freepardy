@@ -30,7 +30,7 @@ export default function QuestionModal({
 }: QuestionModalProps) {
     const { gameSettings } = useGameData();
     const [showAnswer, setShowAnswer] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(gameSettings?.timerDuration || 30);
+    const [timeLeft, setTimeLeft] = useState(gameSettings?.timerDuration || 15);
     const [timerActive, setTimerActive] = useState(false);
     const [timerExpired, setTimerExpired] = useState(false);
 
@@ -81,7 +81,7 @@ export default function QuestionModal({
 
     // Calculate progress percentage
     const progressPercentage =
-        (timeLeft / (gameSettings?.timerDuration || 30)) * 100;
+        (timeLeft / (gameSettings?.timerDuration || 15)) * 100;
 
     return (
         <Dialog open={isOpen} onOpenChange={handleClose}>

@@ -23,7 +23,7 @@ export default function GameSettings() {
   const handleSaveSettings = () => {
     updateGameSettings({
       timerEnabled,
-      timerDuration: Number.parseInt(timerDuration) || 30,
+      timerDuration: Number.parseInt(timerDuration) || 15,
     })
 
     updateFinalJeopardy(finalCategory, finalQuestion, finalAnswer)

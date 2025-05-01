@@ -1,42 +1,124 @@
 {
     "categories": [
         {
-            "id": "7b405212-1a28-44a3-89b3-bdcd6f9abcce",
-            "title": "Falco",
+            "id": "f5d9532b-4158-4497-b80d-71d10d78030b",
+            "title": "Europäische Königshäuser",
             "questions": [
                 {
-                    "id": "a458d5bd-fcdc-48ff-b00c-598f8962363e",
+                    "id": "165ca4be-9287-4749-a439-e0045f258c5b",
                     "value": 200,
-                    "question": "Falcos bürgerlicher Name.",
-                    "answer": "Johann Hölzel?",
+                    "question": "Diese Monarchin regierte das Vereinigte Königreich über 70 Jahre.",
+                    "answer": "Queen Elizabeth II",
                     "used": false
                 },
                 {
-                    "id": "940397e4-02da-410a-a35b-44382d16a089",
+                    "id": "028d1064-0594-48cf-a560-9ae7f7c8fe5d",
                     "value": 400,
-                    "question": "Mit diesem Lied wurde Falco international bekannt.",
-                    "answer": "Rock Me Amadeus",
+                    "question": "Das Königshaus dieses Landes heißt 'Oranien-Nassau'.",
+                    "answer": "die Niederlande",
                     "used": false
                 },
                 {
-                    "id": "065a0d3c-4cba-40f7-873d-89aa05ac099c",
+                    "id": "9cb9839a-1059-43b8-92d3-0ddc652123f7",
                     "value": 600,
-                    "question": "Falco stammte aus dieser Stadt.",
-                    "answer": "Wien?",
+                    "question": "Diese Monarchin ist die erste Königin von Großbritannien und Irland.",
+                    "answer": "Queen Anne",
                     "used": false
                 },
                 {
-                    "id": "fa82ebde-1626-476f-9b44-2361e269c15b",
+                    "id": "ba9efca5-7692-4231-8473-b23eb9a94a69",
                     "value": 800,
-                    "question": "In diesem Jahr verstarb Falco.",
-                    "answer": "1998?",
+                    "question": "Dieser spanische König ist mit Königin Letizia verheiratet.",
+                    "answer": "Felipe VI",
                     "used": false
                 },
                 {
-                    "id": "be0b6cdb-2103-43cc-be2b-82782ad41ba9",
+                    "id": "fa944db2-e1a0-4b95-902b-547ae5459430",
                     "value": 1000,
-                    "question": "Dieses Lied von Falco handelt von einer Prostituierten.",
-                    "answer": "Jeanny",
+                    "question": "In diesem Land residiert die Königin Margrethe II.",
+                    "answer": "Dänemark",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "ff01539d-40c9-4eff-936d-fbb1ae5dcd9c",
+            "title": "Ernährung",
+            "questions": [
+                {
+                    "id": "1e9a7026-6006-4334-ba39-1db8afce8436",
+                    "value": 200,
+                    "question": "Dieses Vitamin wird hauptsächlich durch Sonnenlicht gebildet.",
+                    "answer": "Vitamin D",
+                    "used": false
+                },
+                {
+                    "id": "3615e661-75cc-4cde-bf77-6175e59def87",
+                    "value": 400,
+                    "question": "Diese Diät vermeidet komplett Kohlenhydrate.",
+                    "answer": "Keto",
+                    "used": false
+                },
+                {
+                    "id": "5b4268e3-41b6-4ae0-a981-b1b4ee265e1c",
+                    "value": 600,
+                    "question": "Diese Nährstoffgruppe liefert am meisten Energie pro Gramm.",
+                    "answer": "Fette",
+                    "used": false
+                },
+                {
+                    "id": "f3605d17-eee5-4763-9efe-f645183ac9ab",
+                    "value": 800,
+                    "question": "Wie heißt der Prozess, bei dem Lebensmittel durch Mikroorganismen verändert werden?",
+                    "answer": "Fermentation",
+                    "used": false
+                },
+                {
+                    "id": "78e16151-665f-477f-a425-a12ed642f547",
+                    "value": 1000,
+                    "question": "Welche Vitaminform muss der menschliche Körper aus Beta-Carotin synthetisieren, wenn sie nicht durch tierische Produkte aufgenommen wird?",
+                    "answer": "Vitamin A",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "86b18585-dbc3-4790-862c-d8209417b607",
+            "title": "Gilmore Girls",
+            "questions": [
+                {
+                    "id": "bd539098-85c5-440f-89fd-41e9a2b65531",
+                    "value": 200,
+                    "question": "Der Name der Tochter von Lorelai Gilmore.",
+                    "answer": "Rory",
+                    "used": false
+                },
+                {
+                    "id": "d725a807-1e85-4dcb-9e88-4f59d597dcad",
+                    "value": 400,
+                    "question": "Die Stadt, in der die Serie spielt.",
+                    "answer": "Stars Hollow",
+                    "used": false
+                },
+                {
+                    "id": "39cd8c53-932a-4e78-a852-1d2b3adb6fc0",
+                    "value": 600,
+                    "question": "Dieses Getränk ist Lorelais Lieblingsgetränk.",
+                    "answer": "Kaffee",
+                    "used": false
+                },
+                {
+                    "id": "fce60f2a-65f1-4bd6-99b8-34785ceba4a0",
+                    "value": 800,
+                    "question": "Lorelai betreibt dieses Hotel.",
+                    "answer": "das Dragonfly Inn",
+                    "used": false
+                },
+                {
+                    "id": "ad232da8-5e09-4085-b8af-db8a8c1fd21d",
+                    "value": 1000,
+                    "question": "Diese Schauspielerin spielt Lorelai.",
+                    "answer": "Lauren Graham",
                     "used": false
                 }
             ]
@@ -49,76 +131,35 @@
                     "id": "b4c6bfc5-a382-4242-9965-024b3e1a0d96",
                     "value": 200,
                     "question": "Der höchste Berg der Alpen.",
-                    "answer": "der Mont Blanc?",
+                    "answer": "der Mont Blanc",
                     "used": false
                 },
                 {
                     "id": "8532267f-f38c-4527-9aa4-8c88dd968e1a",
                     "value": 400,
                     "question": "Dieser Berg liegt in Deutschland und ist sehr bekannt.",
-                    "answer": "die Zugspitze?",
+                    "answer": "die Zugspitze",
                     "used": false
                 },
                 {
                     "id": "ccff2806-2738-49d0-9987-d8cc890884ec",
                     "value": 600,
                     "question": "Dieses Gebirge trennt Europa von Asien.",
-                    "answer": "Was sind der Ural?",
+                    "answer": "der Ural",
                     "used": false
                 },
                 {
                     "id": "ca7e6aae-ce7f-4f21-95f5-89707f7e7e35",
                     "value": 800,
-                    "question": "Der Großglockner liegt in diesem Land.",
-                    "answer": "Österreich?",
+                    "question": "Wie heißt die markante Felsspitze der Geislergruppe",
+                    "answer": "die Große Fermeda",
                     "used": false
                 },
                 {
                     "id": "8c015db1-1284-433a-8628-468d3aaded09",
                     "value": 1000,
-                    "question": "Dieses Land ist komplett von Alpen umgeben.",
-                    "answer": "die Schweiz?",
-                    "used": false
-                }
-            ]
-        },
-        {
-            "id": "02df5f9e-6be1-40f0-9417-64620e451262",
-            "title": "Autos",
-            "questions": [
-                {
-                    "id": "718a72e2-f455-47e2-99ff-8c4bf423a145",
-                    "value": 200,
-                    "question": "Diese deutsche Marke stellt den Golf her.",
-                    "answer": "Volkswagen?",
-                    "used": false
-                },
-                {
-                    "id": "34aca15e-4de0-4a2d-bd9a-6e99ce2b1416",
-                    "value": 400,
-                    "question": "Dieses italienische Auto ist bekannt für Luxus und Geschwindigkeit.",
-                    "answer": "Ferrari?",
-                    "used": false
-                },
-                {
-                    "id": "ecc04bae-4846-401e-965d-76de9b2539bb",
-                    "value": 600,
-                    "question": "Das weltweit erste Auto wurde von ihm gebaut.",
-                    "answer": "Karl Benz?",
-                    "used": false
-                },
-                {
-                    "id": "ebeeeb3d-1ef2-47af-99c0-1a4713962ec7",
-                    "value": 800,
-                    "question": "Dieses Kürzel steht für Elektromobilität bei BMW.",
-                    "answer": "BMW i?",
-                    "used": false
-                },
-                {
-                    "id": "c1e8cba1-1e0d-4bc9-9a12-0fcc2a1f0e32",
-                    "value": 1000,
-                    "question": "Dieses Auto war eines der meistverkauften weltweit.",
-                    "answer": "der Toyota Corolla?",
+                    "question": "Wien trennt die Alpen von welchem Gebirge?",
+                    "answer": "Karpaten",
                     "used": false
                 }
             ]
@@ -130,77 +171,36 @@
                 {
                     "id": "24b40407-35d8-45e2-9847-860b080ab318",
                     "value": 200,
-                    "question": "Die Hauptstadt von Österreich.",
-                    "answer": "Wien?",
+                    "question": "Dieses Musikgenie wurde in Salzburg geboren.",
+                    "answer": "Mozart",
                     "used": false
                 },
                 {
                     "id": "3f34f220-456e-47cf-8b4f-07514ef43b51",
                     "value": 400,
-                    "question": "Dieses Gericht besteht aus Kalbfleisch und Panade.",
-                    "answer": "Wiener Schnitzel?",
+                    "question": "Ab wann durften Frauen über 20 Jahre in Österreich wählen?",
+                    "answer": "18. Dezember 1918",
                     "used": false
                 },
                 {
                     "id": "7c73faa7-984d-4b49-89c1-fb3ba158e71b",
                     "value": 600,
-                    "question": "Dieses Musikgenie wurde in Salzburg geboren.",
-                    "answer": "Mozart?",
+                    "question": "In welchem Jahr wurde Österreich offiziell Teil der EU?",
+                    "answer": "1995",
                     "used": false
                 },
                 {
                     "id": "a85e80a7-5c37-4cb3-986c-31577529d812",
                     "value": 800,
                     "question": "So heißt das österreichische Parlament.",
-                    "answer": "der Nationalrat?",
+                    "answer": "der Nationalrat",
                     "used": false
                 },
                 {
                     "id": "e7c74b87-d3a6-4af7-9af7-7ca85e5ba38a",
                     "value": 1000,
-                    "question": "In diesen Bergen liegt Tirol.",
-                    "answer": "Was sind die Alpen?",
-                    "used": false
-                }
-            ]
-        },
-        {
-            "id": "972d4a1f-8922-4fd8-8586-6491229a6553",
-            "title": "Mode",
-            "questions": [
-                {
-                    "id": "235fabaa-9e6d-41bb-bd9f-65104678542a",
-                    "value": 200,
-                    "question": "Dieser französische Designer ist bekannt für das 'kleine Schwarze'.",
-                    "answer": "Coco Chanel?",
-                    "used": false
-                },
-                {
-                    "id": "e7bb56ad-bdcb-41da-a93c-4d60c88ffa28",
-                    "value": 400,
-                    "question": "Dieses jährliche Ereignis zeigt Mode in Paris.",
-                    "answer": "die Paris Fashion Week?",
-                    "used": false
-                },
-                {
-                    "id": "8ebf3a18-6a08-48bb-8cc2-5fa85cac70a6",
-                    "value": 600,
-                    "question": "Diese Hose ist nach einer italienischen Stadt benannt.",
-                    "answer": "Jeans (Genua)?",
-                    "used": false
-                },
-                {
-                    "id": "2e2f72e6-025b-419c-8d6a-97a3ba5b8c3b",
-                    "value": 800,
-                    "question": "Dieser Begriff beschreibt nachhaltige Kleidung.",
-                    "answer": "Fair Fashion?",
-                    "used": false
-                },
-                {
-                    "id": "796a000b-ab3b-466a-8021-2ccde4ea31c2",
-                    "value": 1000,
-                    "question": "Dieses Accessoire trägt man am Hals.",
-                    "answer": "ein Schal?",
+                    "question": "Welches Regierungssystem hat Österreich?",
+                    "answer": "semipräsidentielle Republik",
                     "used": false
                 }
             ]
@@ -208,7 +208,7 @@
     ],
     "settings": {
         "timerEnabled": true,
-        "timerDuration": 30,
+        "timerDuration": 15,
         "finalJeopardyCategory": "TV Serie",
         "finalJeopardyQuestion": "In welcher TV Serie gibt es Charaktere namens Ross, Rachel und Joey?",
         "finalJeopardyAnswer": "Friends"

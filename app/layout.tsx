@@ -6,7 +6,7 @@ import { GameDataProvider } from "@/hooks/use-game-data";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "Freepardy Game",
+    title: "Freepardy",
     description:
         "A Jeopardy-style game board built with Next.js and Tailwind CSS",
 };

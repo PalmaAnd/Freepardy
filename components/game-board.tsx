@@ -68,7 +68,7 @@ export default function GameBoard() {
                     className="min-w-max"
                 >
                     {/* Categories Row */}
-                    <div className="grid grid-cols-6 gap-1 sm:gap-2 mb-1 sm:mb-2">
+                    <div className="grid grid-cols-5 gap-1 sm:gap-2 mb-1 sm:mb-2">
                         {gameData.categories.map((category, index) => (
                             <Card
                                 key={category.id || index}
@@ -84,7 +84,7 @@ export default function GameBoard() {
                     </div>
 
                     {/* Questions Grid */}
-                    <div className="grid grid-cols-6 gap-1 sm:gap-2">
+                    <div className="grid grid-cols-5 gap-1 sm:gap-2">
                         {Array.from({ length: numQuestions }).map(
                             (_, questionIndex) => (
                                 <React.Fragment key={questionIndex}>

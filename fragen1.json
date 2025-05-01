@@ -7,200 +7,200 @@
                 {
                     "id": "9391b6ec-701f-4145-b5dd-1b3f7795ee63",
                     "value": 200,
-                    "question": "Diese Vampirfigur verliebt sich in Bella Swan.",
-                    "answer": "Edward Cullen?",
+                    "question": "Dieser Vapir verliebt sich in Bella",
+                    "answer": "Edward Cullen",
                     "used": false
                 },
                 {
                     "id": "588010ce-ea49-42fd-8f8d-e8bba516a270",
                     "value": 400,
-                    "question": "Diese Werwolf-Figur konkurriert um Bellas Herz.",
-                    "answer": "Jacob Black?",
+                    "question": "Dieser Werwolf konkurriert um Bella.",
+                    "answer": "Jacob Black",
                     "used": false
                 },
                 {
                     "id": "a2047c55-cd81-4ad4-9d29-68d290066030",
                     "value": 600,
-                    "question": "In diesem US-Bundesstaat spielt die Twilight-Saga hauptsächlich.",
-                    "answer": "Washington?",
+                    "question": "Wie heißt der Vampir, der als Anführer der Volturi fungiert?",
+                    "answer": "Aro",
                     "used": false
                 },
                 {
                     "id": "c885939e-2873-4151-ba86-2458f9c8ce6e",
                     "value": 800,
                     "question": "Die Autorin der Twilight-Reihe.",
-                    "answer": "Stephenie Meyer?",
+                    "answer": "Stephenie Meyer",
                     "used": false
                 },
                 {
                     "id": "7b74cc50-435b-40e5-8a6c-d4b7d8e9c617",
                     "value": 1000,
-                    "question": "Diese Fähigkeit besitzt Alice Cullen.",
-                    "answer": "Zukunftsvision?",
+                    "question": "Wie heißt der letzte Teil der Twilight-Saga? (Buch)",
+                    "answer": "Midnight Sun",
                     "used": false
                 }
             ]
         },
         {
-            "id": "6f599db8-0330-4cca-aced-1f4ae0296066",
-            "title": "Taylor Swift",
+            "id": "573c7595-4c48-4d43-9d9e-954d48255ece",
+            "title": "Kräuter",
             "questions": [
                 {
-                    "id": "3e3f0ef5-2a1d-492f-827a-829e50b61695",
+                    "id": "fe9ddbd5-f78f-49a2-9fd3-535447a1be28",
                     "value": 200,
-                    "question": "Dieses Album von Taylor Swift gewann 2021 den Grammy für das beste Album des Jahres.",
-                    "answer": "Folklore?",
+                    "question": "Dieses Kraut wird oft mit italienischer Küche assoziiert.",
+                    "answer": "Basilikum?",
                     "used": false
                 },
                 {
-                    "id": "74c4e039-1657-45c0-bdf0-838b587c2f7a",
+                    "id": "fe765108-41d6-4a07-aaf5-a0b1b34fe528",
                     "value": 400,
-                    "question": "Dieses Lied enthält die Zeile 'You belong with me'.",
-                    "answer": "You Belong With Me",
+                    "question": "Dieses mediterrane Kraut ist robust und winterhart.",
+                    "answer": "Rosmarin?",
                     "used": false
                 },
                 {
-                    "id": "0612de72-2ea8-43c1-a844-7f23416a0726",
+                    "id": "ae49d239-348a-4e5a-981f-b06e26bce314",
                     "value": 600,
-                    "question": "Ihr Spitzname ist auch ein Tier.",
-                    "answer": "Tay-Tay oder Swiftie?",
+                    "question": "Ein Klassiker in der deutschen Küche und wichtig für Gurken.",
+                    "answer": "Dill?",
                     "used": false
                 },
                 {
-                    "id": "ab00b9bc-6734-4982-bbf1-f4a6880f2742",
+                    "id": "96f41a71-a234-4bbd-8085-56134d9017e8",
                     "value": 800,
-                    "question": "Taylor begann ihre Karriere in diesem Musikgenre.",
-                    "answer": "Country?",
+                    "question": "Dieses Kraut wirkt beruhigend und hilft beim Einschlafen.",
+                    "answer": "Baldrian?",
                     "used": false
                 },
                 {
-                    "id": "a963620d-1cb4-4df1-b892-108098cbb108",
+                    "id": "5906708a-ca2c-4c60-ae62-49fec39efaf1",
                     "value": 1000,
-                    "question": "Diese Tournee war ein weltweiter Erfolg 2023.",
-                    "answer": "The Eras Tour?",
+                    "question": "Ein Kraut mit intensivem Anisgeschmack.",
+                    "answer": "Estragon?",
                     "used": false
                 }
             ]
         },
         {
-            "id": "f5d9532b-4158-4497-b80d-71d10d78030b",
-            "title": "Europäische Königshäuser",
+            "id": "caa9fcaf-b9f9-4f75-8117-f2587fd2b644",
+            "title": "Hochzeit",
             "questions": [
                 {
-                    "id": "165ca4be-9287-4749-a439-e0045f258c5b",
+                    "id": "8f6d6a40-4098-4c72-83bb-70c02202d9f4",
                     "value": 200,
-                    "question": "Diese Monarchin regierte das Vereinigte Königreich über 70 Jahre.",
-                    "answer": "Queen Elizabeth II?",
+                    "question": "Dieser Monat gilt traditionell als Hochzeitsmonat.",
+                    "answer": "Juni?",
                     "used": false
                 },
                 {
-                    "id": "028d1064-0594-48cf-a560-9ae7f7c8fe5d",
+                    "id": "877afdc6-b803-471c-b630-11be799d6cd9",
                     "value": 400,
-                    "question": "Das Königshaus dieses Landes heißt 'Oranien-Nassau'.",
-                    "answer": "die Niederlande?",
+                    "question": "Welcher Finger der linken Hand trägt in vielen Ländern den Ehering und warum?",
+                    "answer": "Ringfinger, Vena Amoris",
                     "used": false
                 },
                 {
-                    "id": "ba9efca5-7692-4231-8473-b23eb9a94a69",
+                    "id": "f11839e7-13b9-40f9-ab1f-c9c3a0dc60d6",
                     "value": 600,
-                    "question": "Dieser spanische König ist mit Königin Letizia verheiratet.",
-                    "answer": "Felipe VI?",
+                    "question": "In welchem Land entstand die Tradition, Braut und Bräutigam mit Reis zu bewerfen?",
+                    "answer": "Italien",
                     "used": false
                 },
                 {
-                    "id": "9cb9839a-1059-43b8-92d3-0ddc652123f7",
+                    "id": "dcd55d4b-4101-4927-b5e1-97349f69a816",
                     "value": 800,
-                    "question": "Diese royale Hochzeit fand 2011 in London statt.",
-                    "answer": "die Hochzeit von William und Kate?",
+                    "question": "In welchem Jahr wurde zum ersten mal 'Zwischen Tüll und Tränen' ausgestrahlt?",
+                    "answer": "2016",
                     "used": false
                 },
                 {
-                    "id": "fa944db2-e1a0-4b95-902b-547ae5459430",
+                    "id": "7557c7cd-a4ab-47da-89d9-66c8314c6684",
                     "value": 1000,
-                    "question": "In diesem Land residiert die Königin Margrethe II.",
-                    "answer": "Dänemark?",
+                    "question": "Seit wann gibt es 'Das Duell - Zwischen Tüll und Tränen'?",
+                    "answer": "2022",
                     "used": false
                 }
             ]
         },
         {
-            "id": "ff01539d-40c9-4eff-936d-fbb1ae5dcd9c",
-            "title": "Ernährung",
+            "id": "7b405212-1a28-44a3-89b3-bdcd6f9abcce",
+            "title": "Falco",
             "questions": [
                 {
-                    "id": "1e9a7026-6006-4334-ba39-1db8afce8436",
+                    "id": "a458d5bd-fcdc-48ff-b00c-598f8962363e",
                     "value": 200,
-                    "question": "Dieses Vitamin wird hauptsächlich durch Sonnenlicht gebildet.",
-                    "answer": "Vitamin D?",
+                    "question": "Falcos bürgerlicher Name.",
+                    "answer": "Johann Hölzel",
                     "used": false
                 },
                 {
-                    "id": "3615e661-75cc-4cde-bf77-6175e59def87",
+                    "id": "940397e4-02da-410a-a35b-44382d16a089",
                     "value": 400,
-                    "question": "Diese Diät vermeidet komplett Kohlenhydrate.",
-                    "answer": "Keto?",
+                    "question": "Mit diesem Lied wurde Falco international bekannt.",
+                    "answer": "Rock Me Amadeus",
                     "used": false
                 },
                 {
-                    "id": "5b4268e3-41b6-4ae0-a981-b1b4ee265e1c",
+                    "id": "fa82ebde-1626-476f-9b44-2361e269c15b",
                     "value": 600,
-                    "question": "Diese Nährstoffgruppe liefert am meisten Energie pro Gramm.",
-                    "answer": "Was sind Fette?",
+                    "question": "In diesem Jahr verstarb Falco.",
+                    "answer": "1998",
                     "used": false
                 },
                 {
-                    "id": "f3605d17-eee5-4763-9efe-f645183ac9ab",
+                    "id": "be0b6cdb-2103-43cc-be2b-82782ad41ba9",
                     "value": 800,
-                    "question": "Diese Ernährung basiert ausschließlich auf pflanzlichen Produkten.",
-                    "answer": "Veganismus?",
+                    "question": "Dieses Lied von Falco handelt von einer Prostituierten.",
+                    "answer": "Jeanny",
                     "used": false
                 },
                 {
-                    "id": "78e16151-665f-477f-a425-a12ed642f547",
+                    "id": "065a0d3c-4cba-40f7-873d-89aa05ac099c",
                     "value": 1000,
-                    "question": "Dieses Mineral ist wichtig für gesunde Knochen.",
-                    "answer": "Kalzium?",
+                    "question": "In welchem Bezirk von Wien wurde Falco geboren?",
+                    "answer": "dem 5ten",
                     "used": false
                 }
             ]
         },
         {
-            "id": "3a362aa0-4320-46df-b2cb-f2a2f0357f4e",
-            "title": "ABBA",
+            "id": "02df5f9e-6be1-40f0-9417-64620e451262",
+            "title": "Autos",
             "questions": [
                 {
-                    "id": "67f63cf1-cb60-4aa2-8cf6-6b63d8abd896",
+                    "id": "718a72e2-f455-47e2-99ff-8c4bf423a145",
                     "value": 200,
-                    "question": "ABBA kommt aus diesem Land.",
-                    "answer": "Schweden?",
+                    "question": "Diese deutsche Marke stellt den Golf her.",
+                    "answer": "Volkswagen",
                     "used": false
                 },
                 {
-                    "id": "340c35ab-eec2-4944-bb29-88f8dcdfd423",
+                    "id": "34aca15e-4de0-4a2d-bd9a-6e99ce2b1416",
                     "value": 400,
-                    "question": "Dieser ABBA-Hit beginnt mit den Worten 'I've been cheated by you...'",
-                    "answer": "Mamma Mia",
+                    "question": "Welches deutsche Automodell wurde als 'Käfer' weltweit bekannt?",
+                    "answer": "VW Beetle",
                     "used": false
                 },
                 {
-                    "id": "7b9fac33-5b68-490d-a50c-f8e1f9242b45",
+                    "id": "ecc04bae-4846-401e-965d-76de9b2539bb",
                     "value": 600,
-                    "question": "Das Musical basierend auf ABBA-Songs.",
-                    "answer": "Mamma Mia!",
+                    "question": "Das weltweit erste Auto wurde von ihm gebaut.",
+                    "answer": "Karl Benz",
                     "used": false
                 },
                 {
-                    "id": "d5352203-3194-4660-8582-d42dce44a598",
+                    "id": "ebeeeb3d-1ef2-47af-99c0-1a4713962ec7",
                     "value": 800,
-                    "question": "So heißt das erste Studioalbum von ABBA.",
-                    "answer": "Ring Ring",
+                    "question": "Wie heißt das System, das automatisch das Drehmoment an Vorder- und Hinterachse verteilt?",
+                    "answer": "Allradantrieb",
                     "used": false
                 },
                 {
-                    "id": "8aa33a61-6b57-4eab-b69d-f055ee06cdfe",
+                    "id": "c1e8cba1-1e0d-4bc9-9a12-0fcc2a1f0e32",
                     "value": 1000,
-                    "question": "ABBA gewann diesen Wettbewerb 1974.",
-                    "answer": "der Eurovision Song Contest?",
+                    "question": "Dieses Auto war eines der meistverkauften weltweit.",
+                    "answer": "der Toyota Corolla",
                     "used": false
                 }
             ]
@@ -208,7 +208,7 @@
     ],
     "settings": {
         "timerEnabled": true,
-        "timerDuration": 30,
+        "timerDuration": 15,
         "finalJeopardyCategory": "Sankt Pauls",
         "finalJeopardyQuestion": "Wie wird der Paulsner Kirchturm noch genannt?",
         "finalJeopardyAnswer": "Der Dom auf dem Lande"

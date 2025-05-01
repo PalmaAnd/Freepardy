@@ -1,83 +1,83 @@
 {
     "categories": [
         {
-            "id": "573c7595-4c48-4d43-9d9e-954d48255ece",
-            "title": "Kräuter",
+            "id": "6f599db8-0330-4cca-aced-1f4ae0296066",
+            "title": "Taylor Swift",
             "questions": [
                 {
-                    "id": "fe9ddbd5-f78f-49a2-9fd3-535447a1be28",
+                    "id": "3e3f0ef5-2a1d-492f-827a-829e50b61695",
                     "value": 200,
-                    "question": "Dieses Kraut wird oft mit italienischer Küche assoziiert.",
-                    "answer": "Basilikum?",
+                    "question": "Dieses Album von Taylor Swift gewann 2021 den Grammy für das beste Album des Jahres.",
+                    "answer": "Folklore",
                     "used": false
                 },
                 {
-                    "id": "ae49d239-348a-4e5a-981f-b06e26bce314",
+                    "id": "74c4e039-1657-45c0-bdf0-838b587c2f7a",
                     "value": 400,
-                    "question": "Ein Klassiker in der deutschen Küche und wichtig für Gurken.",
-                    "answer": "Dill?",
+                    "question": "Dieses Lied enthält die Zeile 'You belong with me'.",
+                    "answer": "You Belong With Me",
                     "used": false
                 },
                 {
-                    "id": "96f41a71-a234-4bbd-8085-56134d9017e8",
+                    "id": "0612de72-2ea8-43c1-a844-7f23416a0726",
                     "value": 600,
-                    "question": "Dieses Kraut wirkt beruhigend und hilft beim Einschlafen.",
-                    "answer": "Baldrian?",
+                    "question": "In welchem Jahr veröffentlichte Taylor Swift die Originalversion von All Too Well",
+                    "answer": "2012",
                     "used": false
                 },
                 {
-                    "id": "5906708a-ca2c-4c60-ae62-49fec39efaf1",
+                    "id": "ab00b9bc-6734-4982-bbf1-f4a6880f2742",
                     "value": 800,
-                    "question": "Ein Kraut mit intensivem Anisgeschmack.",
-                    "answer": "Estragon?",
+                    "question": "Welcher Künstler ist im Song „The Last Time“ als Duettpartner zu hören?",
+                    "answer": "Gary Lightbody",
                     "used": false
                 },
                 {
-                    "id": "fe765108-41d6-4a07-aaf5-a0b1b34fe528",
+                    "id": "a963620d-1cb4-4df1-b892-108098cbb108",
                     "value": 1000,
-                    "question": "Dieses mediterrane Kraut ist robust und winterhart.",
-                    "answer": "Rosmarin?",
+                    "question": "Wie lange dauerte die 'Taylor Version' des Songs All Too Well",
+                    "answer": "10 Minuten",
                     "used": false
                 }
             ]
         },
         {
-            "id": "caa9fcaf-b9f9-4f75-8117-f2587fd2b644",
-            "title": "Hochzeit",
+            "id": "3a362aa0-4320-46df-b2cb-f2a2f0357f4e",
+            "title": "ABBA",
             "questions": [
                 {
-                    "id": "8f6d6a40-4098-4c72-83bb-70c02202d9f4",
+                    "id": "67f63cf1-cb60-4aa2-8cf6-6b63d8abd896",
                     "value": 200,
-                    "question": "Dieser Monat gilt traditionell als Hochzeitsmonat.",
-                    "answer": "Juni?",
+                    "question": "ABBA kommt aus diesem Land.",
+                    "answer": "Schweden?",
                     "used": false
                 },
                 {
-                    "id": "877afdc6-b803-471c-b630-11be799d6cd9",
+                    "id": "340c35ab-eec2-4944-bb29-88f8dcdfd423",
                     "value": 400,
-                    "question": "Dieser Gegenstand wird bei der Trauung an den Finger gesteckt.",
-                    "answer": "der Ehering?",
+                    "question": "Dieser ABBA-Hit beginnt mit den Worten 'I've been cheated by you...'",
+                    "answer": "Mamma Mia",
                     "used": false
                 },
                 {
-                    "id": "f11839e7-13b9-40f9-ab1f-c9c3a0dc60d6",
+                    "id": "7b9fac33-5b68-490d-a50c-f8e1f9242b45",
                     "value": 600,
-                    "question": "Die Person, die das Brautkleid trägt.",
-                    "answer": "die Braut?",
+                    "question": "ABBA gewann diesen Wettbewerb 1974.",
+                    "answer": "der Eurovision Song Contest?",
                     "used": false
                 },
                 {
-                    "id": "dcd55d4b-4101-4927-b5e1-97349f69a816",
+                    "id": "d5352203-3194-4660-8582-d42dce44a598",
                     "value": 800,
-                    "question": "Traditionell spricht diese Person die Traurede.",
-                    "answer": "der Pfarrer oder Standesbeamte?",
+                    "question": "So heißt das erste Studioalbum von ABBA.",
+                    "answer": "Ring Ring",
                     "used": false
                 },
                 {
-                    "id": "7557c7cd-a4ab-47da-89d9-66c8314c6684",
+                    "id": "8aa33a61-6b57-4eab-b69d-f055ee06cdfe",
                     "value": 1000,
-                    "question": "Diese Farbe trägt die Braut traditionell.",
-                    "answer": "Weiß?",
+                    "question": "Der Titel des ersten Liedes, das die vier Musiker im März 1972 als Gruppe aufnahmen",
+                    "answer": "People Need Love",
                     "used": false
                 }
             ]
@@ -87,79 +87,38 @@
             "title": "Feminismus",
             "questions": [
                 {
-                    "id": "1a68c899-8046-47f3-af30-2cc6026a83b6",
+                    "id": "0dd60889-f157-4d93-ac65-f8779ae83330",
                     "value": 200,
-                    "question": "Diese deutsche Autorin schrieb 'Der Ursprung der Welt'.",
-                    "answer": "Alice Schwarzer?",
+                    "question": "Dieser Begriff beschreibt ungleiche Bezahlung für gleiche Arbeit.",
+                    "answer": "Gender Pay Gap",
                     "used": false
                 },
                 {
-                    "id": "ad51cc49-be28-4248-8794-1be17c302360",
+                    "id": "1a68c899-8046-47f3-af30-2cc6026a83b6",
                     "value": 400,
-                    "question": "Diese Bewegung kämpfte für das Frauenwahlrecht.",
-                    "answer": "die Suffragettenbewegung?",
+                    "question": "Diese deutsche Autorin schrieb 'Der Ursprung der Welt'.",
+                    "answer": "Alice Schwarzer",
                     "used": false
                 },
                 {
                     "id": "ec4c891a-8e27-4d2b-be04-119030ccaf59",
                     "value": 600,
                     "question": "Diese feministische Welle begann in den 1960ern.",
-                    "answer": "die zweite Welle?",
+                    "answer": "die zweite Welle",
                     "used": false
                 },
                 {
                     "id": "98fbb8e5-3159-4f24-9cef-359df8d7d8b2",
                     "value": 800,
                     "question": "Diese Philosophin schrieb 'Das andere Geschlecht'.",
-                    "answer": "Simone de Beauvoir?",
+                    "answer": "Simone de Beauvoir",
                     "used": false
                 },
                 {
-                    "id": "0dd60889-f157-4d93-ac65-f8779ae83330",
+                    "id": "ad51cc49-be28-4248-8794-1be17c302360",
                     "value": 1000,
-                    "question": "Dieser Begriff beschreibt ungleiche Bezahlung für gleiche Arbeit.",
-                    "answer": "Gender Pay Gap?",
-                    "used": false
-                }
-            ]
-        },
-        {
-            "id": "86b18585-dbc3-4790-862c-d8209417b607",
-            "title": "Gilmore Girls",
-            "questions": [
-                {
-                    "id": "bd539098-85c5-440f-89fd-41e9a2b65531",
-                    "value": 200,
-                    "question": "Der Name der Tochter von Lorelai Gilmore.",
-                    "answer": "Rory?",
-                    "used": false
-                },
-                {
-                    "id": "d725a807-1e85-4dcb-9e88-4f59d597dcad",
-                    "value": 400,
-                    "question": "Die Stadt, in der die Serie spielt.",
-                    "answer": "Stars Hollow?",
-                    "used": false
-                },
-                {
-                    "id": "39cd8c53-932a-4e78-a852-1d2b3adb6fc0",
-                    "value": 600,
-                    "question": "Dieses Getränk ist Lorelais Lieblingsgetränk.",
-                    "answer": "Kaffee?",
-                    "used": false
-                },
-                {
-                    "id": "fce60f2a-65f1-4bd6-99b8-34785ceba4a0",
-                    "value": 800,
-                    "question": "Lorelai betreibt dieses Hotel.",
-                    "answer": "das Dragonfly Inn?",
-                    "used": false
-                },
-                {
-                    "id": "ad232da8-5e09-4085-b8af-db8a8c1fd21d",
-                    "value": 1000,
-                    "question": "Diese Schauspielerin spielt Lorelai.",
-                    "answer": "Lauren Graham?",
+                    "question": "Diese Bewegung kämpfte für das Frauenwahlrecht.",
+                    "answer": "die Suffragettenbewegung",
                     "used": false
                 }
             ]
@@ -169,38 +128,79 @@
             "title": "Literatur",
             "questions": [
                 {
-                    "id": "c5ea26a9-7514-497a-a335-696e81ab9276",
+                    "id": "3f852c6a-2e87-4592-8c7b-6a4e36223686",
                     "value": 200,
-                    "question": "Diese Romanfigur lebt in einem Land mit sprechenden Tieren und weißen Hexen.",
-                    "answer": "Lucy Pevensie?",
+                    "question": "Goethes berühmte Tragödie über einen Pakt mit dem Teufel.",
+                    "answer": "Faust",
                     "used": false
                 },
                 {
                     "id": "154690ce-7028-4288-a7af-f80b35ebb6a6",
                     "value": 400,
                     "question": "Dieser Autor schrieb 'Der Prozess'.",
-                    "answer": "Franz Kafka?",
+                    "answer": "Franz Kafka",
                     "used": false
                 },
                 {
-                    "id": "3f852c6a-2e87-4592-8c7b-6a4e36223686",
+                    "id": "c5ea26a9-7514-497a-a335-696e81ab9276",
                     "value": 600,
-                    "question": "Goethes berühmte Tragödie über einen Pakt mit dem Teufel.",
-                    "answer": "Faust?",
+                    "question": "Diese Romanfigur lebt in einem Land mit sprechenden Tieren und weißen Hexen.",
+                    "answer": "Lucy Pevensie",
                     "used": false
                 },
                 {
                     "id": "0dd63a9d-8b06-4c13-86a2-281c6163c523",
                     "value": 800,
                     "question": "Dieses Buch beginnt mit 'Call me Ishmael.'",
-                    "answer": "Moby Dick?",
+                    "answer": "Moby Dick",
                     "used": false
                 },
                 {
                     "id": "e3bef623-7418-41ae-96ef-ce3e35610a3d",
                     "value": 1000,
                     "question": "Autor von 'Der Steppenwolf'.",
-                    "answer": "Hermann Hesse?",
+                    "answer": "Hermann Hesse",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "972d4a1f-8922-4fd8-8586-6491229a6553",
+            "title": "Mode",
+            "questions": [
+                {
+                    "id": "e7bb56ad-bdcb-41da-a93c-4d60c88ffa28",
+                    "value": 200,
+                    "question": "Dieses jährliche Ereignis zeigt Mode in Paris.",
+                    "answer": "die Paris Fashion Week",
+                    "used": false
+                },
+                {
+                    "id": "235fabaa-9e6d-41bb-bd9f-65104678542a",
+                    "value": 400,
+                    "question": "Dieser französische Designer ist bekannt für das 'kleine Schwarze'.",
+                    "answer": "Coco Chanel",
+                    "used": false
+                },
+                {
+                    "id": "8ebf3a18-6a08-48bb-8cc2-5fa85cac70a6",
+                    "value": 600,
+                    "question": "Diese Hose ist nach einer italienischen Stadt benannt.",
+                    "answer": "Jeans (Genua)",
+                    "used": false
+                },
+                {
+                    "id": "2e2f72e6-025b-419c-8d6a-97a3ba5b8c3b",
+                    "value": 800,
+                    "question": "Dieser Begriff beschreibt nachhaltige Kleidung.",
+                    "answer": "Fair Fashion",
+                    "used": false
+                },
+                {
+                    "id": "796a000b-ab3b-466a-8021-2ccde4ea31c2",
+                    "value": 1000,
+                    "question": "Aus welcher Sprache stammt das Wort 'Mode' und beschreibe es",
+                    "answer": "Französisch, in einem bestimmten Zeitraum geltende Regel, Dinge zu tun, zu gestalten, zu tragen oder zu konsumieren",
                     "used": false
                 }
             ]
@@ -208,7 +208,7 @@
     ],
     "settings": {
         "timerEnabled": true,
-        "timerDuration": 30,
+        "timerDuration": 15,
         "finalJeopardyCategory": "Programmieren",
         "finalJeopardyQuestion": "Wie wird beim Programmieren ein Wert genannte, der nur Wahr oder Falsch sein kann?",
         "finalJeopardyAnswer": "Boolean"
