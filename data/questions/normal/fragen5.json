@@ -208,7 +208,7 @@
     ],
     "settings": {
         "timerEnabled": true,
-        "timerDuration": 30,
+        "timerDuration": 15,
         "finalJeopardyCategory": "Dummköpfe",
         "finalJeopardyQuestion": "Aus welchem Land stammt der Erfinder der Hausaufgaben?",
         "finalJeopardyAnswer": "Italien"

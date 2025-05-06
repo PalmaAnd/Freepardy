@@ -1,0 +1,216 @@
+{
+    "categories": [
+        {
+            "id": "lol-lore-001",
+            "title": "League of Legends Lore",
+            "questions": [
+                {
+                    "id": "lollore-q1",
+                    "value": 200,
+                    "question": "Welcher Champion wurde einst als Prinz von Demacia geboren und kämpft mit einer großen Klinge?",
+                    "answer": "Jarvan IV",
+                    "used": false
+                },
+                {
+                    "id": "lollore-q2",
+                    "value": 400,
+                    "question": "Welche Stadt ist bekannt für Magie, politische Intrigen und ist Heimat von Ryze?",
+                    "answer": "Runeterra",
+                    "used": false
+                },
+                {
+                    "id": "lollore-q3",
+                    "value": 600,
+                    "question": "Wie heißt der dämonische König, der Swain seine Macht gab?",
+                    "answer": "Raum",
+                    "used": false
+                },
+                {
+                    "id": "lollore-q4",
+                    "value": 800,
+                    "question": "Welche Organisation brachte viele Champions zusammen und wurde inzwischen aufgelöst?",
+                    "answer": "Institute of War",
+                    "used": false
+                },
+                {
+                    "id": "lollore-q5",
+                    "value": 1000,
+                    "question": "Welche Verbindung besteht zwischen Soraka und Warwick laut älterem Lore?",
+                    "answer": "Soraka verfluchte Warwick zur Bestie",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "lol-champions-001",
+            "title": "League of Legends Champions",
+            "questions": [
+                {
+                    "id": "lolchamp-q1",
+                    "value": 200,
+                    "question": "Released 2009, männlich, Demacia, Toplane, Mana, Meele",
+                    "answer": "Garen",
+                    "used": false
+                },
+                {
+                    "id": "lolchamp-q2",
+                    "value": 400,
+                    "question": "Released 2011, weiblich, Ionia, Midlane, Energie, Meele",
+                    "answer": "Akali",
+                    "used": false
+                },
+                {
+                    "id": "lolchamp-q3",
+                    "value": 600,
+                    "question": "Released 2018, männlich, Noxus, Jungle, Mana, Meele",
+                    "answer": "Kayn",
+                    "used": false
+                },
+                {
+                    "id": "lolchamp-q4",
+                    "value": 800,
+                    "question": "Released 2020, weiblich, Targon, Support, Mana, Ranged",
+                    "answer": "Seraphine",
+                    "used": false
+                },
+                {
+                    "id": "lolchamp-q5",
+                    "value": 1000,
+                    "question": "Released 2015, männlich, Piltover, Midlane, Mana, Ranged",
+                    "answer": "Ekko",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "lol-spells-001",
+            "title": "League of Legends Spells",
+            "questions": [
+                {
+                    "id": "lolspell-q1",
+                    "value": 200,
+                    "question": "Dieser Spell lässt den Champion in die Luft springen und beim Aufprall Gegner verlangsamen",
+                    "answer": "Zac E",
+                    "used": false
+                },
+                {
+                    "id": "lolspell-q2",
+                    "value": 400,
+                    "question": "Dieser Spell feuert drei Geschosse ab, die bei getroffenen Champions Schaden und Heilung geben",
+                    "answer": "Lucian Q",
+                    "used": false
+                },
+                {
+                    "id": "lolspell-q3",
+                    "value": 600,
+                    "question": "Dieser Ultimate erlaubt dem Champion, sich auf ein Ziel zu teleportieren und massiven Burst-Schaden zu machen",
+                    "answer": "Nocturne R",
+                    "used": false
+                },
+                {
+                    "id": "lolspell-q4",
+                    "value": 800,
+                    "question": "Ein Skillshot, der einen Gegner festhält, Schaden verursacht und Flächenkontrolle bietet",
+                    "answer": "Morgana Q",
+                    "used": false
+                },
+                {
+                    "id": "lolspell-q5",
+                    "value": 1000,
+                    "question": "Dieser Zauber erschafft eine Barriere, die Magieschaden negiert und Bewegungsgeschwindigkeit gibt",
+                    "answer": "Sivir E",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "gaming-history-001",
+            "title": "Gaming History",
+            "questions": [
+                {
+                    "id": "ghistory-q1",
+                    "value": 200,
+                    "question": "Welche Konsole veröffentlichte Nintendo 1985 international?",
+                    "answer": "NES",
+                    "used": false
+                },
+                {
+                    "id": "ghistory-q2",
+                    "value": 400,
+                    "question": "Welches Spiel von id Software gilt als Urvater der Ego-Shooter?",
+                    "answer": "Doom",
+                    "used": false
+                },
+                {
+                    "id": "ghistory-q3",
+                    "value": 600,
+                    "question": "Welches Spiel führte Quick-Time-Events erstmals prominent ein?",
+                    "answer": "Shenmue",
+                    "used": false
+                },
+                {
+                    "id": "ghistory-q4",
+                    "value": 800,
+                    "question": "Welches Unternehmen veröffentlichte das erste Online-Multiplayer-Spiel für Heimkonsolen?",
+                    "answer": "Sega",
+                    "used": false
+                },
+                {
+                    "id": "ghistory-q5",
+                    "value": 1000,
+                    "question": "Welches Computerspiel von 1980 enthielt erstmals ein verstecktes Easter Egg mit Entwicklernamen?",
+                    "answer": "Adventure",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "games-general-001",
+            "title": "Games",
+            "questions": [
+                {
+                    "id": "games-q1",
+                    "value": 200,
+                    "question": "In welchem Spiel jagt ein gelber Kreis Punkte und Geister?",
+                    "answer": "Pac-Man",
+                    "used": false
+                },
+                {
+                    "id": "games-q2",
+                    "value": 400,
+                    "question": "Welche Reihe dreht sich um die Familie Belmont und Dracula?",
+                    "answer": "Castlevania",
+                    "used": false
+                },
+                {
+                    "id": "games-q3",
+                    "value": 600,
+                    "question": "In welchem Spiel landet Link in der Welt Termina?",
+                    "answer": "Majora's Mask",
+                    "used": false
+                },
+                {
+                    "id": "games-q4",
+                    "value": 800,
+                    "question": "Welcher Indie-Titel wurde bekannt für sein Kampfsystem, bei dem man Gegner verschonen kann?",
+                    "answer": "Undertale",
+                    "used": false
+                },
+                {
+                    "id": "games-q5",
+                    "value": 1000,
+                    "question": "Welches Spiel enthält das mysteriöse 'Mushroom Kingdom Fusion Project'?",
+                    "answer": "Super Mario Bros X",
+                    "used": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 15,
+        "finalJeopardyCategory": "André",
+        "finalJeopardyQuestion": "Wie viele Jahre hab ich Tennis im Verein gespielt?",
+        "finalJeopardyAnswer": "3"
+    }
+}

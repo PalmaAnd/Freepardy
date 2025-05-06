@@ -1,0 +1,216 @@
+{
+    "categories": [
+        {
+            "id": "rechenuebungen-001",
+            "title": "Rechenübungen",
+            "questions": [
+                {
+                    "id": "rechnen-q1",
+                    "value": 200,
+                    "question": "Was ist 12 * 8?",
+                    "answer": "96",
+                    "used": false
+                },
+                {
+                    "id": "rechnen-q2",
+                    "value": 400,
+                    "question": "Was ist das Ergebnis von (45 + 55) ÷ 10?",
+                    "answer": "10",
+                    "used": false
+                },
+                {
+                    "id": "rechnen-q3",
+                    "value": 600,
+                    "question": "Was ist die Wurzel aus 144?",
+                    "answer": "12",
+                    "used": false
+                },
+                {
+                    "id": "rechnen-q4",
+                    "value": 800,
+                    "question": "Was ergibt 13² - 5²?",
+                    "answer": "144",
+                    "used": false
+                },
+                {
+                    "id": "rechnen-q5",
+                    "value": 1000,
+                    "question": "Löse: (3³ + 4²) * 2",
+                    "answer": "74",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "sprueche-001",
+            "title": "Sprüche",
+            "questions": [
+                {
+                    "id": "spruch-q1",
+                    "value": 200,
+                    "question": "Morgenstund hat ...",
+                    "answer": "Gold im Mund",
+                    "used": false
+                },
+                {
+                    "id": "spruch-q2",
+                    "value": 400,
+                    "question": "Wer im Glashaus sitzt, ...",
+                    "answer": "soll nicht mit Steinen werfen",
+                    "used": false
+                },
+                {
+                    "id": "spruch-q3",
+                    "value": 600,
+                    "question": "Der Apfel fällt nicht ...",
+                    "answer": "weit vom Stamm",
+                    "used": false
+                },
+                {
+                    "id": "spruch-q4",
+                    "value": 800,
+                    "question": "Was du heute kannst besorgen, ...",
+                    "answer": "das verschiebe nicht auf morgen",
+                    "used": false
+                },
+                {
+                    "id": "spruch-q5",
+                    "value": 1000,
+                    "question": "Kommt Zeit, ...",
+                    "answer": "kommt Rat",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "fremdwoerter-001",
+            "title": "Fremdwörter",
+            "questions": [
+                {
+                    "id": "fremd-q1",
+                    "value": 200,
+                    "question": "Französisches Wort für ein luxuriöses Modehaus",
+                    "answer": "Couture",
+                    "used": false
+                },
+                {
+                    "id": "fremd-q2",
+                    "value": 400,
+                    "question": "Niederländisches Wort für 'Gemütlichkeit', das sich schwer ins Deutsche übersetzen lässt",
+                    "answer": "Gezelligheid",
+                    "used": false
+                },
+                {
+                    "id": "fremd-q3",
+                    "value": 600,
+                    "question": "Französisches Wort für eine Art Lebenskunst oder Lebensart",
+                    "answer": "Savoir-vivre",
+                    "used": false
+                },
+                {
+                    "id": "fremd-q4",
+                    "value": 800,
+                    "question": "Dänisches Wort für ein Gefühl von Gemütlichkeit, Zufriedenheit und Gemeinschaft",
+                    "answer": "Hygge",
+                    "used": false
+                },
+                {
+                    "id": "fremd-q5",
+                    "value": 1000,
+                    "question": "Französischer Begriff für jemanden, der sich elegant und kultiviert gibt, ohne es zu sein",
+                    "answer": "Parvenu",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "marken-001",
+            "title": "Marken",
+            "questions": [
+                {
+                    "id": "marke-q1",
+                    "value": 200,
+                    "question": "Diese Marke mit einem angebissenen Apfel steht für Technikprodukte",
+                    "answer": "Apple",
+                    "used": false
+                },
+                {
+                    "id": "marke-q2",
+                    "value": 400,
+                    "question": "Diese deutsche Sportmarke trägt drei Streifen",
+                    "answer": "Adidas",
+                    "used": false
+                },
+                {
+                    "id": "marke-q3",
+                    "value": 600,
+                    "question": "Diese schwedische Marke ist für Möbel mit Aufbauanleitungen bekannt",
+                    "answer": "IKEA",
+                    "used": false
+                },
+                {
+                    "id": "marke-q4",
+                    "value": 800,
+                    "question": "Diese Luxusautomarke gehört zu Volkswagen und hat ein geflügeltes „B“ im Logo",
+                    "answer": "Bentley",
+                    "used": false
+                },
+                {
+                    "id": "marke-q5",
+                    "value": 1000,
+                    "question": "Dieses italienische Modehaus wurde 1921 von Guccio gegründet",
+                    "answer": "Gucci",
+                    "used": false
+                }
+            ]
+        },
+        {
+            "id": "biologie-001",
+            "title": "Biologie",
+            "questions": [
+                {
+                    "id": "bio-q1",
+                    "value": 200,
+                    "question": "Dieses Organ pumpt Blut durch den menschlichen Körper",
+                    "answer": "das Herz",
+                    "used": false
+                },
+                {
+                    "id": "bio-q2",
+                    "value": 400,
+                    "question": "Diese Pflanzen betreiben Fotosynthese mit Hilfe von Chlorophyll",
+                    "answer": "grüne Pflanzen",
+                    "used": false
+                },
+                {
+                    "id": "bio-q3",
+                    "value": 600,
+                    "question": "Diese Zellen im Blut sind für die Immunabwehr zuständig",
+                    "answer": "weiße Blutkörperchen",
+                    "used": false
+                },
+                {
+                    "id": "bio-q4",
+                    "value": 800,
+                    "question": "Diese Erbsubstanz enthält den genetischen Code eines Organismus",
+                    "answer": "DNA",
+                    "used": false
+                },
+                {
+                    "id": "bio-q5",
+                    "value": 1000,
+                    "question": "Dieser Zellorganell wird als 'Kraftwerk der Zelle' bezeichnet",
+                    "answer": "das Mitochondrium?",
+                    "used": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 15,
+        "finalJeopardyCategory": "Idioten",
+        "finalJeopardyQuestion": "Aus welchem Land stammt der Erfinder der Hausaufgaben?",
+        "finalJeopardyAnswer": "Italien"
+    }
+}
