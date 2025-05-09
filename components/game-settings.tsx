@@ -38,7 +38,7 @@ export default function GameSettings() {
     const handleSaveSettings = () => {
         updateGameSettings({
             timerEnabled,
-            timerDuration: Number.parseInt(timerDuration) || 15,
+            timerDuration: Number.parseInt(timerDuration.toString()) || 15,
         });
 
         updateFinalJeopardy(finalCategory, finalQuestion, finalAnswer);
@@ -102,7 +102,7 @@ export default function GameSettings() {
                                 type="number"
                                 value={timerDuration}
                                 onChange={(e) =>
-                                    setTimerDuration(e.target.value)
+                                    setTimerDuration(Number(e.target.value))
                                 }
                                 min={5}
                                 max={120}

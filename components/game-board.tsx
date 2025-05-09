@@ -10,18 +10,32 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function GameBoard() {
-    const { gameData, markQuestionAsUsed, resetGame } = useGameData();
-    const [currentQuestion, setCurrentQuestion] = useState(null);
+    const { gameData, markQuestionAsUsed } = useGameData();
+    const [currentQuestion, setCurrentQuestion] = useState<{
+        categoryTitle: string;
+        value: number;
+        used: boolean;
+        question: string;
+        answer: string;
+        categoryIndex: number;
+        questionIndex: number;
+    } | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [showFinalJeopardy, setShowFinalJeopardy] = useState(false);
 
-    const handleQuestionClick = (categoryIndex, questionIndex) => {
+    const handleQuestionClick = (
+        categoryIndex: number,
+        questionIndex: number
+    ) => {
         const category = gameData.categories[categoryIndex];
         const question = category.questions[questionIndex];
 
         setCurrentQuestion({
             categoryTitle: category.title,
-            ...question,
+            value: question.value,
+            question: question.question,
+            answer: question.answer,
+            used: question.used,
             categoryIndex,
             questionIndex,
         });
@@ -52,7 +66,6 @@ export default function GameBoard() {
     );
 
     // Default values if no categories exist
-    const numCategories = gameData.categories.length || 6;
     const numQuestions = gameData.categories[0]?.questions.length || 5;
 
     if (showFinalJeopardy) {
