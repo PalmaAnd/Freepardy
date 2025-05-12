@@ -75,11 +75,7 @@ export default function GameBoard() {
     return (
         <div className="w-full">
             <div className="overflow-x-auto pb-4">
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className="min-w-max"
-                >
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                     {/* Categories Row */}
                     <div className="grid grid-cols-5 gap-1 sm:gap-2 mb-1 sm:mb-2">
                         {gameData.categories.map((category, index) => (
