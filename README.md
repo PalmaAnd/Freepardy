@@ -26,31 +26,25 @@ A free, customizable Jeopardy-style quiz game built with Next.js and Tailwind CS
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/freepardy.git
+    git clone https://github.com/PalmaAnd/freepardy.git
     cd freepardy
     ```
 
-2. Install dependencies:
+2. Install dependencies and run the development server:
 
     ```bash
     npm install
-
-     # or
-
-     yarn install
+    npm run dev
     ```
 
-3. Run the development server:
+    or
 
     ```bash
-    npm run dev
-
-     # or
-
-     yarn dev
+    yarn install
+    yarn dev
     ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Deployment
 
