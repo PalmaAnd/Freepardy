@@ -1,5 +1,13 @@
 # Freepardy
 
+![License](https://img.shields.io/github/license/PalmaAnd/freepardy)
+![Version](https://img.shields.io/github/package-json/v/PalmaAnd/freepardy)
+![Issues](https://img.shields.io/github/issues/PalmaAnd/freepardy)
+![Pull Requests](https://img.shields.io/github/issues-pr/PalmaAnd/freepardy)
+![Last Commit](https://img.shields.io/github/last-commit/PalmaAnd/freepardy)
+![Contributors](https://img.shields.io/github/contributors/PalmaAnd/freepardy)
+![Deploy](https://img.shields.io/github/deployments/PalmaAnd/freepardy/github-pages)
+
 A free, customizable Jeopardy-style quiz game built with Next.js and Tailwind CSS.
 
 ## Features
@@ -13,6 +21,7 @@ A free, customizable Jeopardy-style quiz game built with Next.js and Tailwind CS
 -   Offline support with PWA capabilities
 -   Share game configurations via URL
 -   Multilingual rules (English and German)
+-   Accessible UI components (Radix UI)
 
 ## Getting Started
 
@@ -68,11 +77,25 @@ You can customize the game by:
 
 The game uses Tailwind CSS for styling. You can customize the appearance by modifying the Tailwind configuration in `tailwind.config.ts`.
 
-## License
+## Contributing
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## Code of Conduct
+
+Please review our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) to help us keep this project open and welcoming.
+
+## Security
+
+If you discover a security vulnerability, please see [SECURITY.md](SECURITY.md) for responsible disclosure guidelines.
 
 ## Acknowledgments
 
 -   Inspired by the Jeopardy! TV game show
--   Built with Next.js and Tailwind CSS
+-   Built with Next.js, Tailwind CSS, and Radix UI
+
+## Useful Open Source Files
+
+-   [CONTRIBUTING.md](CONTRIBUTING.md): Guidelines for contributing to this project.
+-   [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md): Code of conduct for participants.
+-   [LICENSE](LICENSE): Project license.
