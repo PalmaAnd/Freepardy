@@ -1,4 +1,3 @@
-/* eslint-disable */
 "use client";
 
 import { useState } from "react";
@@ -7,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { useGameData } from "@/hooks/use-game-data";
+import { normalizeGameData } from "@/lib/game-data";
 
 export default function ImportExport() {
     const { gameData, setGameData } = useGameData();
@@ -57,10 +57,6 @@ export default function ImportExport() {
                 questions: Question[];
             }
 
-            interface GameData {
-                categories: Category[];
-            }
-
             parsedData.categories.forEach(
                 (category: Category, index: number) => {
                     if (!category.title) {
@@ -106,7 +102,7 @@ export default function ImportExport() {
                 }
             );
 
-            setGameData(parsedData);
+            setGameData(normalizeGameData(parsedData));
             setSuccess("Game data imported successfully!");
             setJsonInput("");
         } catch (err) {
@@ -159,6 +155,9 @@ export default function ImportExport() {
                 <h3 className="text-lg font-medium mb-2">Import Game Data</h3>
                 <p className="text-sm text-gray-500 mb-4">
                     Import game data from a JSON file or paste JSON directly.
+                    A starter template is available in
+                    {" "}
+                    <code>.data/question-import-template.json</code>.
                 </p>
 
                 {error && (

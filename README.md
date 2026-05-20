@@ -14,12 +14,11 @@ A free, customizable Jeopardy-style quiz game built with Next.js and Tailwind CS
 
 -   Create and edit categories and questions
 -   Import/export game data as JSON
+-   Import starter template at `.data/question-import-template.json`
 -   Final Jeopardy round with wagering
--   Team scoring system
+-   Team scoring with local persistence
 -   Timer functionality
 -   Mobile-responsive design
--   Offline support with PWA capabilities
--   Share game configurations via URL
 -   Multilingual rules (English and German)
 -   Accessible UI components (Radix UI)
 
@@ -71,7 +70,7 @@ You can customize the game by:
 
 -   Using the Admin Panel to create categories and questions
 -   Importing a JSON file with your game data
--   Sharing a game configuration via URL
+-   Starting from `.data/question-import-template.json`
 
 ### Styling
 
@@ -84,10 +83,6 @@ Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) fo
 ## Code of Conduct
 
 Please review our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) to help us keep this project open and welcoming.
-
-## Security
-
-If you discover a security vulnerability, please see [SECURITY.md](SECURITY.md) for responsible disclosure guidelines.
 
 ## Acknowledgments
 

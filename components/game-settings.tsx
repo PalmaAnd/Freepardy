@@ -35,6 +35,15 @@ export default function GameSettings() {
         gameSettings.finalJeopardyAnswer
     );
 
+    const openSettings = () => {
+        setTimerDuration(gameSettings.timerDuration);
+        setTimerEnabled(gameSettings.timerEnabled);
+        setFinalCategory(gameSettings.finalJeopardyCategory);
+        setFinalQuestion(gameSettings.finalJeopardyQuestion);
+        setFinalAnswer(gameSettings.finalJeopardyAnswer);
+        setIsOpen(true);
+    };
+
     const handleSaveSettings = () => {
         updateGameSettings({
             timerEnabled,
@@ -59,7 +68,12 @@ export default function GameSettings() {
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-                <Button variant="default" size="sm" className="sm:size-default">
+                <Button
+                    variant="default"
+                    size="sm"
+                    className="sm:size-default"
+                    onClick={openSettings}
+                >
                     <Settings className="h-4 w-4 mr-1 sm:mr-2" />
                     <span className="hidden sm:inline">Settings</span>
                 </Button>

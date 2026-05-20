@@ -1,4 +1,3 @@
-/* eslint-disable */
 "use client";
 
 import { useState, useEffect } from "react";
@@ -8,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { useGameData } from "@/hooks/use-game-data";
+import { normalizeTeams, TEAM_STORAGE_KEY, type Team } from "@/lib/game-data";
 
 interface FinalJeopardyProps {
     onFinish: () => void;
@@ -15,49 +15,44 @@ interface FinalJeopardyProps {
 
 export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
     const { gameSettings } = useGameData();
+    const getStoredTeams = () => {
+        if (typeof window === "undefined") {
+            return [];
+        }
+
+        try {
+            return normalizeTeams(
+                JSON.parse(window.localStorage.getItem(TEAM_STORAGE_KEY) || "[]")
+            );
+        } catch (error) {
+            console.error("Failed to parse saved team data:", error);
+            return [];
+        }
+    };
     const [stage, setStage] = useState<
         "category" | "wager" | "question" | "answer" | "results"
     >("category");
-    const [wagers, setWagers] = useState<Record<string, number>>({});
-    const [answers, setAnswers] = useState<Record<string, string>>({});
+    const [wagers, setWagers] = useState<Record<number, number>>(() => {
+        const initialWagers: Record<number, number> = {};
+        getStoredTeams().forEach((team) => {
+            initialWagers[team.id] = 0;
+        });
+        return initialWagers;
+    });
+    const [answers, setAnswers] = useState<Record<number, string>>(() => {
+        const initialAnswers: Record<number, string> = {};
+        getStoredTeams().forEach((team) => {
+            initialAnswers[team.id] = "";
+        });
+        return initialAnswers;
+    });
     const [correctAnswers, setCorrectAnswers] = useState<
-        Record<string, boolean>
+        Record<number, boolean>
     >({});
     const [timeLeft, setTimeLeft] = useState(60);
     const [timerActive, setTimerActive] = useState(false);
 
-    // Get teams from localStorage
-    interface Team {
-        id: string | number;
-        name: string;
-        score: number;
-    }
-
-    const [teams, setTeams] = useState<Team[]>([]);
-
-    useEffect(() => {
-        // This is a simplified approach - in a real app, you'd want to use context
-        const teamsFromStorage = JSON.parse(
-            localStorage.getItem("jeopardyTeams") || "[]"
-        );
-        if (teamsFromStorage.length > 0) {
-            setTeams(teamsFromStorage);
-
-            // Initialize wagers
-            const initialWagers: Record<string | number, number> = {};
-            teamsFromStorage.forEach((team: { id: string | number }) => {
-                initialWagers[team.id] = 0;
-            });
-            setWagers(initialWagers);
-
-            // Initialize answers
-            const initialAnswers: Record<string | number, string> = {};
-            teamsFromStorage.forEach((team: { id: string | number }) => {
-                initialAnswers[team.id] = "";
-            });
-            setAnswers(initialAnswers);
-        }
-    }, []);
+    const [teams] = useState<Team[]>(getStoredTeams);
 
     // Timer effect
     useEffect(() => {
@@ -82,22 +77,25 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
         };
     }, [timerActive, timeLeft, stage]);
 
-    const handleWagerChange = (teamId: any, value: string) => {
-        const numValue = Number.parseInt(value) || 0;
+    const handleWagerChange = (teamId: number, value: string) => {
+        const team = teams.find((currentTeam) => currentTeam.id === teamId);
+        const limit = team ? (team.score > 0 ? team.score : 1000) : 1000;
+        const parsedValue = Number.parseInt(value, 10) || 0;
+        const numValue = Math.max(0, Math.min(parsedValue, limit));
         setWagers({
             ...wagers,
             [teamId]: numValue,
         });
     };
 
-    const handleAnswerChange = (teamId: any, value: string) => {
+    const handleAnswerChange = (teamId: number, value: string) => {
         setAnswers({
             ...answers,
             [teamId]: value,
         });
     };
 
-    const handleCorrectAnswer = (teamId: any, isCorrect: boolean) => {
+    const handleCorrectAnswer = (teamId: number, isCorrect: boolean) => {
         setCorrectAnswers({
             ...correctAnswers,
             [teamId]: isCorrect,
@@ -127,7 +125,7 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
             });
 
             // Save updated teams to localStorage
-            localStorage.setItem("jeopardyTeams", JSON.stringify(updatedTeams));
+            localStorage.setItem(TEAM_STORAGE_KEY, JSON.stringify(updatedTeams));
 
             // Return to the main game
             onFinish();
@@ -144,8 +142,17 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
                 </CardHeader>
             </Card>
 
+            {teams.length === 0 && (
+                <Card className="mb-6">
+                    <CardContent className="py-8 text-center space-y-4">
+                        <p>Add at least one team before starting Final Jeopardy.</p>
+                        <Button onClick={onFinish}>Back to Game Board</Button>
+                    </CardContent>
+                </Card>
+            )}
+
             <AnimatePresence mode="wait">
-                {stage === "category" && (
+                {teams.length > 0 && stage === "category" && (
                     <motion.div
                         key="category"
                         initial={{ opacity: 0, y: 20 }}

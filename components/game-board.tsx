@@ -29,6 +29,9 @@ export default function GameBoard() {
     ) => {
         const category = gameData.categories[categoryIndex];
         const question = category.questions[questionIndex];
+        if (!question || question.used) {
+            return;
+        }
 
         setCurrentQuestion({
             categoryTitle: category.title,
@@ -66,7 +69,13 @@ export default function GameBoard() {
     );
 
     // Default values if no categories exist
-    const numQuestions = gameData.categories[0]?.questions.length || 5;
+    const numQuestions = Math.max(
+        1,
+        ...gameData.categories.map((category) => category.questions.length)
+    );
+    const columnStyle = {
+        gridTemplateColumns: `repeat(${Math.max(gameData.categories.length, 1)}, minmax(0, 1fr))`,
+    };
 
     if (showFinalJeopardy) {
         return <FinalJeopardy onFinish={endFinalJeopardy} />;
@@ -77,7 +86,10 @@ export default function GameBoard() {
             <div className="overflow-x-auto pb-4">
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                     {/* Categories Row */}
-                    <div className="grid grid-cols-5 gap-1 sm:gap-2 mb-1 sm:mb-2">
+                    <div
+                        className="grid gap-1 sm:gap-2 mb-1 sm:mb-2"
+                        style={columnStyle}
+                    >
                         {gameData.categories.map((category, index) => (
                             <Card
                                 key={category.id || index}
@@ -93,7 +105,7 @@ export default function GameBoard() {
                     </div>
 
                     {/* Questions Grid */}
-                    <div className="grid grid-cols-5 gap-1 sm:gap-2">
+                    <div className="grid gap-1 sm:gap-2" style={columnStyle}>
                         {Array.from({ length: numQuestions }).map(
                             (_, questionIndex) => (
                                 <React.Fragment key={questionIndex}>
@@ -114,6 +126,7 @@ export default function GameBoard() {
                                                     used={
                                                         question?.used || false
                                                     }
+                                                    disabled={!question}
                                                     onClick={() =>
                                                         handleQuestionClick(
                                                             categoryIndex,

@@ -1,16 +1,39 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PlusCircle, MinusCircle, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+    createDefaultTeams,
+    normalizeTeams,
+    TEAM_STORAGE_KEY,
+    type Team,
+} from "@/lib/game-data";
 
 export default function TeamScoring() {
-    const [teams, setTeams] = useState([
-        { id: 1, name: "Team 1", score: 0 },
-        { id: 2, name: "Team 2", score: 0 },
-    ]);
+    const [teams, setTeams] = useState<Team[]>(() => {
+        if (typeof window === "undefined") {
+            return createDefaultTeams();
+        }
+
+        const savedTeams = window.localStorage.getItem(TEAM_STORAGE_KEY);
+        if (!savedTeams) {
+            return createDefaultTeams();
+        }
+
+        try {
+            return normalizeTeams(JSON.parse(savedTeams));
+        } catch (error) {
+            console.error("Failed to parse saved team data:", error);
+            return createDefaultTeams();
+        }
+    });
+
+    useEffect(() => {
+        localStorage.setItem(TEAM_STORAGE_KEY, JSON.stringify(teams));
+    }, [teams]);
 
     const addTeam = () => {
         const newId = Math.max(0, ...teams.map((t) => t.id)) + 1;
@@ -65,6 +88,7 @@ export default function TeamScoring() {
                                 <Button
                                     variant="ghost"
                                     size="sm"
+                                    disabled={teams.length === 1}
                                     onClick={() => removeTeam(team.id)}
                                 >
                                     <Trash2 className="h-4 w-4 text-red-500" />

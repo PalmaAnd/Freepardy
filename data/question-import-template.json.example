@@ -1,0 +1,161 @@
+{
+    "settings": {
+        "timerEnabled": true,
+        "timerDuration": 15,
+        "finalJeopardyCategory": "World Landmarks",
+        "finalJeopardyQuestion": "This monument in Agra was commissioned by Shah Jahan.",
+        "finalJeopardyAnswer": "What is the Taj Mahal?"
+    },
+    "categories": [
+        {
+            "title": "Science",
+            "questions": [
+                {
+                    "value": 200,
+                    "question": "This planet is known as the Red Planet.",
+                    "answer": "What is Mars?"
+                },
+                {
+                    "value": 400,
+                    "question": "The process plants use to make food from sunlight.",
+                    "answer": "What is photosynthesis?"
+                },
+                {
+                    "value": 600,
+                    "question": "This gas makes up most of Earth's atmosphere.",
+                    "answer": "What is nitrogen?"
+                },
+                {
+                    "value": 800,
+                    "question": "The unit used to measure electrical resistance.",
+                    "answer": "What is the ohm?"
+                },
+                {
+                    "value": 1000,
+                    "question": "This physicist formulated the three laws of motion.",
+                    "answer": "Who is Isaac Newton?"
+                }
+            ]
+        },
+        {
+            "title": "History",
+            "questions": [
+                {
+                    "value": 200,
+                    "question": "This wall fell in 1989.",
+                    "answer": "What is the Berlin Wall?"
+                },
+                {
+                    "value": 400,
+                    "question": "The year the Declaration of Independence was signed.",
+                    "answer": "What is 1776?"
+                },
+                {
+                    "value": 600,
+                    "question": "This queen ruled Ancient Egypt and allied with Mark Antony.",
+                    "answer": "Who is Cleopatra?"
+                },
+                {
+                    "value": 800,
+                    "question": "The ship on which the Pilgrims traveled to North America.",
+                    "answer": "What is the Mayflower?"
+                },
+                {
+                    "value": 1000,
+                    "question": "This empire built Machu Picchu.",
+                    "answer": "What is the Inca Empire?"
+                }
+            ]
+        },
+        {
+            "title": "Pop Culture",
+            "questions": [
+                {
+                    "value": 200,
+                    "question": "This singer is known as the 'Queen of Pop'.",
+                    "answer": "Who is Madonna?"
+                },
+                {
+                    "value": 400,
+                    "question": "The coffee shop regularly visited in Friends.",
+                    "answer": "What is Central Perk?"
+                },
+                {
+                    "value": 600,
+                    "question": "The fictional African nation in Black Panther.",
+                    "answer": "What is Wakanda?"
+                },
+                {
+                    "value": 800,
+                    "question": "The wizarding school attended by Harry Potter.",
+                    "answer": "What is Hogwarts?"
+                },
+                {
+                    "value": 1000,
+                    "question": "This movie won Best Picture at the 1998 Oscars.",
+                    "answer": "What is Titanic?"
+                }
+            ]
+        },
+        {
+            "title": "Geography",
+            "questions": [
+                {
+                    "value": 200,
+                    "question": "The largest ocean on Earth.",
+                    "answer": "What is the Pacific Ocean?"
+                },
+                {
+                    "value": 400,
+                    "question": "This country is home to the city of Kyoto.",
+                    "answer": "What is Japan?"
+                },
+                {
+                    "value": 600,
+                    "question": "The capital city of Canada.",
+                    "answer": "What is Ottawa?"
+                },
+                {
+                    "value": 800,
+                    "question": "The desert that covers much of northern Africa.",
+                    "answer": "What is the Sahara?"
+                },
+                {
+                    "value": 1000,
+                    "question": "The river that flows through Budapest.",
+                    "answer": "What is the Danube?"
+                }
+            ]
+        },
+        {
+            "title": "Sports",
+            "questions": [
+                {
+                    "value": 200,
+                    "question": "The number of players on a standard soccer team on the field.",
+                    "answer": "What is 11?"
+                },
+                {
+                    "value": 400,
+                    "question": "This sport uses a shuttlecock.",
+                    "answer": "What is badminton?"
+                },
+                {
+                    "value": 600,
+                    "question": "The event held every four years featuring summer and winter editions.",
+                    "answer": "What are the Olympics?"
+                },
+                {
+                    "value": 800,
+                    "question": "The color jersey worn by the leader of the Tour de France.",
+                    "answer": "What is yellow?"
+                },
+                {
+                    "value": 1000,
+                    "question": "This athlete was nicknamed 'The Greatest'.",
+                    "answer": "Who is Muhammad Ali?"
+                }
+            ]
+        }
+    ]
+}
