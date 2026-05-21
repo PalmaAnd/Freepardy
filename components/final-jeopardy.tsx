@@ -7,52 +7,23 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { useGameData } from "@/hooks/use-game-data";
-import { normalizeTeams, TEAM_STORAGE_KEY, type Team } from "@/lib/game-data";
 
 interface FinalJeopardyProps {
     onFinish: () => void;
 }
 
 export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
-    const { gameSettings } = useGameData();
-    const getStoredTeams = () => {
-        if (typeof window === "undefined") {
-            return [];
-        }
-
-        try {
-            return normalizeTeams(
-                JSON.parse(window.localStorage.getItem(TEAM_STORAGE_KEY) || "[]")
-            );
-        } catch (error) {
-            console.error("Failed to parse saved team data:", error);
-            return [];
-        }
-    };
+    const { gameSettings, teams, setTeams } = useGameData();
     const [stage, setStage] = useState<
         "category" | "wager" | "question" | "answer" | "results"
     >("category");
-    const [wagers, setWagers] = useState<Record<number, number>>(() => {
-        const initialWagers: Record<number, number> = {};
-        getStoredTeams().forEach((team) => {
-            initialWagers[team.id] = 0;
-        });
-        return initialWagers;
-    });
-    const [answers, setAnswers] = useState<Record<number, string>>(() => {
-        const initialAnswers: Record<number, string> = {};
-        getStoredTeams().forEach((team) => {
-            initialAnswers[team.id] = "";
-        });
-        return initialAnswers;
-    });
+    const [wagers, setWagers] = useState<Record<number, number>>({});
+    const [answers, setAnswers] = useState<Record<number, string>>({});
     const [correctAnswers, setCorrectAnswers] = useState<
         Record<number, boolean>
     >({});
     const [timeLeft, setTimeLeft] = useState(60);
     const [timerActive, setTimerActive] = useState(false);
-
-    const [teams] = useState<Team[]>(getStoredTeams);
 
     // Timer effect
     useEffect(() => {
@@ -82,24 +53,24 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
         const limit = team ? (team.score > 0 ? team.score : 1000) : 1000;
         const parsedValue = Number.parseInt(value, 10) || 0;
         const numValue = Math.max(0, Math.min(parsedValue, limit));
-        setWagers({
-            ...wagers,
+        setWagers((prev) => ({
+            ...prev,
             [teamId]: numValue,
-        });
+        }));
     };
 
     const handleAnswerChange = (teamId: number, value: string) => {
-        setAnswers({
-            ...answers,
+        setAnswers((prev) => ({
+            ...prev,
             [teamId]: value,
-        });
+        }));
     };
 
     const handleCorrectAnswer = (teamId: number, isCorrect: boolean) => {
-        setCorrectAnswers({
-            ...correctAnswers,
+        setCorrectAnswers((prev) => ({
+            ...prev,
             [teamId]: isCorrect,
-        });
+        }));
     };
 
     const moveToNextStage = () => {
@@ -124,8 +95,8 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
                 };
             });
 
-            // Save updated teams to localStorage
-            localStorage.setItem(TEAM_STORAGE_KEY, JSON.stringify(updatedTeams));
+            // Update teams in context
+            setTeams(updatedTeams);
 
             // Return to the main game
             onFinish();

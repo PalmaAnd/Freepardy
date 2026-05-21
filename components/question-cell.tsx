@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface QuestionCellProps {
     value: number;
@@ -20,20 +21,24 @@ export default function QuestionCell({
 
     return (
         <motion.div
-            whileHover={!isInactive ? { scale: 1.05 } : {}}
+            whileHover={!isInactive ? { scale: 1.05, zIndex: 10 } : {}}
             whileTap={!isInactive ? { scale: 0.95 } : {}}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
             <Card
-                className={`cursor-pointer transition-colors ${
+                className={cn(
+                    "cursor-pointer transition-all duration-300 border-2",
                     isInactive
-                        ? "bg-gray-300 text-gray-500"
-                        : "bg-blue-500 hover:bg-blue-600 text-white"
-                }`}
+                        ? "bg-blue-900/20 text-blue-900/40 border-blue-900/30"
+                        : "bg-blue-800 hover:bg-blue-700 text-yellow-500 border-blue-500/50 quiz-card-glow"
+                )}
                 onClick={!isInactive ? onClick : undefined}
             >
                 <CardContent className="flex items-center justify-center p-1 sm:p-2 md:p-4 h-10 sm:h-14 md:h-20 lg:h-24">
-                    <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold">
+                    <span className={cn(
+                        "text-sm sm:text-lg md:text-xl lg:text-3xl font-black italic tracking-tighter",
+                        !isInactive && "gold-glow"
+                    )}>
                         {disabled ? "-" : `$${value}`}
                     </span>
                 </CardContent>

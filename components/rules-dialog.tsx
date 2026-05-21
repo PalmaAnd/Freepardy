@@ -20,27 +20,33 @@ export function RulesDialog() {
             <DialogTrigger asChild>
                 <Button variant="outline">Game Rules</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-2xl bg-white">
+            <DialogContent className="sm:max-w-2xl bg-blue-950 border-blue-500/30 text-blue-100 max-h-[90vh] overflow-y-auto shadow-[0_0_30px_rgba(37,99,235,0.2)]">
                 <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold">
+                    <DialogTitle className="text-2xl font-bold text-yellow-500 gold-glow italic uppercase tracking-tighter">
                         How to Play Jeopardy!
                     </DialogTitle>
-                    <DialogDescription>
-                        Select your preferred language below
+                    <DialogDescription className="text-blue-300">
+                        Learn the rules and gameplay for Freepardy!.
                     </DialogDescription>
                 </DialogHeader>
 
-                <Tabs defaultValue="english" className="mt-4">
-                    <TabsList className="grid w-full grid-cols-2">
-                        <TabsTrigger value="english">English</TabsTrigger>
-                        <TabsTrigger value="german">Deutsch</TabsTrigger>
+                <div className="mt-4">
+                    <p className="text-sm text-blue-300/80 mb-4">
+                        Select your preferred language below
+                    </p>
+
+                    <Tabs defaultValue="english" className="w-full">
+                    <TabsList className="grid w-full grid-cols-2 bg-blue-900/50">
+                        <TabsTrigger value="english" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">English</TabsTrigger>
+                        <TabsTrigger value="german" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">Deutsch</TabsTrigger>
                     </TabsList>
 
-                    <TabsContent value="english" className="space-y-4 mt-4">
+                    <TabsContent value="english" className="space-y-4 mt-4 text-blue-100">
                         <div className="space-y-4">
-                            <h3 className="text-lg font-semibold">
+                            <h3 className="text-lg font-semibold text-yellow-500/90 italic">
                                 Game Board
                             </h3>
+
                             <p>
                                 The game board consists of categories (columns)
                                 and dollar values (rows). Each cell represents a
@@ -159,6 +165,7 @@ export function RulesDialog() {
                         </div>
                     </TabsContent>
                 </Tabs>
+                </div>
             </DialogContent>
         </Dialog>
     );

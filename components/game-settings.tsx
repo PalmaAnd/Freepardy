@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import {
     Dialog,
     DialogContent,
+    DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
@@ -78,25 +79,28 @@ export default function GameSettings() {
                     <span className="hidden sm:inline">Settings</span>
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-md bg-white">
+            <DialogContent className="sm:max-w-md bg-blue-950 border-blue-500/30 text-blue-100 shadow-[0_0_30px_rgba(37,99,235,0.2)]">
                 <DialogHeader>
-                    <DialogTitle>Game Settings</DialogTitle>
+                    <DialogTitle className="text-xl font-bold text-yellow-500 gold-glow italic uppercase tracking-tighter">Game Settings</DialogTitle>
+                    <DialogDescription className="sr-only">
+                        Configure timer and Final Jeopardy settings
+                    </DialogDescription>
                 </DialogHeader>
 
                 <Tabs defaultValue="timer">
-                    <TabsList className="grid grid-cols-3 mb-4">
-                        <TabsTrigger value="timer">Timer</TabsTrigger>
-                        <TabsTrigger value="final">Final Jeopardy</TabsTrigger>
-                        <TabsTrigger value="game">Game</TabsTrigger>
+                    <TabsList className="grid grid-cols-3 mb-4 bg-blue-900/50">
+                        <TabsTrigger value="timer" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">Timer</TabsTrigger>
+                        <TabsTrigger value="final" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">Final Jeopardy</TabsTrigger>
+                        <TabsTrigger value="game" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">Game</TabsTrigger>
                     </TabsList>
 
                     <TabsContent value="timer" className="space-y-4">
                         <div className="flex items-center justify-between">
                             <div className="space-y-0.5">
-                                <Label htmlFor="timer-switch">
+                                <Label htmlFor="timer-switch" className="text-blue-200">
                                     Enable Timer
                                 </Label>
-                                <div className="text-sm text-muted-foreground">
+                                <div className="text-sm text-blue-400">
                                     Set a time limit for answering questions
                                 </div>
                             </div>
@@ -104,11 +108,12 @@ export default function GameSettings() {
                                 id="timer-switch"
                                 checked={timerEnabled}
                                 onCheckedChange={setTimerEnabled}
+                                className="data-[state=checked]:bg-blue-500"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="timer-duration">
+                            <Label htmlFor="timer-duration" className="text-blue-200">
                                 Timer Duration (seconds)
                             </Label>
                             <Input
@@ -121,13 +126,14 @@ export default function GameSettings() {
                                 min={5}
                                 max={120}
                                 disabled={!timerEnabled}
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
                             />
                         </div>
                     </TabsContent>
 
                     <TabsContent value="final" className="space-y-4">
                         <div className="space-y-2">
-                            <Label htmlFor="final-category">
+                            <Label htmlFor="final-category" className="text-blue-200">
                                 Final Jeopardy Category
                             </Label>
                             <Input
@@ -136,11 +142,12 @@ export default function GameSettings() {
                                 onChange={(e) =>
                                     setFinalCategory(e.target.value)
                                 }
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="final-question">
+                            <Label htmlFor="final-question" className="text-blue-200">
                                 Final Jeopardy Question
                             </Label>
                             <Textarea
@@ -150,30 +157,33 @@ export default function GameSettings() {
                                     setFinalQuestion(e.target.value)
                                 }
                                 rows={3}
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
                             />
                         </div>
 
                         <div className="space-y-2">
-                            <Label htmlFor="final-answer">
+                            <Label htmlFor="final-answer" className="text-blue-200">
                                 Final Jeopardy Answer
                             </Label>
                             <Input
                                 id="final-answer"
                                 value={finalAnswer}
                                 onChange={(e) => setFinalAnswer(e.target.value)}
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
                             />
                         </div>
                     </TabsContent>
 
                     <TabsContent value="game" className="space-y-4">
                         <div className="space-y-2">
-                            <Label>Reset Game</Label>
-                            <div className="text-sm text-muted-foreground mb-2">
+                            <Label className="text-blue-200">Reset Game</Label>
+                            <div className="text-sm text-blue-400 mb-2">
                                 Reset all questions to unused state
                             </div>
                             <Button
                                 variant="destructive"
                                 onClick={handleResetGame}
+                                className="w-full bg-red-900/50 hover:bg-red-800 text-red-100 border border-red-500/30"
                             >
                                 <RotateCcw className="h-4 w-4 mr-2" />
                                 Reset Game
@@ -183,7 +193,9 @@ export default function GameSettings() {
                 </Tabs>
 
                 <div className="flex justify-end mt-4">
-                    <Button onClick={handleSaveSettings}>Save Settings</Button>
+                    <Button onClick={handleSaveSettings} className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto">
+                        Save Settings
+                    </Button>
                 </div>
             </DialogContent>
         </Dialog>

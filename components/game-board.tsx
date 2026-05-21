@@ -10,8 +10,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function GameBoard() {
-    const { gameData, markQuestionAsUsed } = useGameData();
+    const { gameData, markQuestionAsUsed, dailyDoubleId } = useGameData();
     const [currentQuestion, setCurrentQuestion] = useState<{
+        id: string;
         categoryTitle: string;
         value: number;
         used: boolean;
@@ -34,6 +35,7 @@ export default function GameBoard() {
         }
 
         setCurrentQuestion({
+            id: question.id,
             categoryTitle: category.title,
             value: question.value,
             question: question.question,
@@ -87,16 +89,16 @@ export default function GameBoard() {
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                     {/* Categories Row */}
                     <div
-                        className="grid gap-1 sm:gap-2 mb-1 sm:mb-2"
+                        className="grid gap-2 sm:gap-4 mb-2 sm:mb-4"
                         style={columnStyle}
                     >
                         {gameData.categories.map((category, index) => (
                             <Card
                                 key={category.id || index}
-                                className="bg-blue-700 text-white"
+                                className="bg-blue-900 border-b-4 border-b-yellow-500 border-x-blue-700 border-t-blue-700 shadow-xl"
                             >
-                                <CardContent className="p-2 sm:p-4 text-center font-bold">
-                                    <h3 className="text-xs sm:text-sm md:text-base lg:text-lg truncate">
+                                <CardContent className="p-2 sm:p-4 text-center font-black italic uppercase tracking-tighter">
+                                    <h3 className="text-[10px] sm:text-xs md:text-sm lg:text-lg truncate text-blue-100 gold-glow">
                                         {category.title}
                                     </h3>
                                 </CardContent>
@@ -105,7 +107,7 @@ export default function GameBoard() {
                     </div>
 
                     {/* Questions Grid */}
-                    <div className="grid gap-1 sm:gap-2" style={columnStyle}>
+                    <div className="grid gap-2 sm:gap-4" style={columnStyle}>
                         {Array.from({ length: numQuestions }).map(
                             (_, questionIndex) => (
                                 <React.Fragment key={questionIndex}>
@@ -145,10 +147,10 @@ export default function GameBoard() {
             </div>
 
             {allQuestionsUsed && !showFinalJeopardy && (
-                <div className="mt-6 text-center">
+                <div className="mt-8 text-center">
                     <Button
                         onClick={startFinalJeopardy}
-                        className="bg-yellow-500 hover:bg-yellow-600 text-white"
+                        className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-black italic uppercase tracking-widest px-8 py-6 text-xl rounded-none border-4 border-yellow-400 shadow-[0_0_20px_rgba(234,179,8,0.5)] transition-all hover:scale-105"
                     >
                         Start Final Jeopardy
                     </Button>
@@ -157,9 +159,11 @@ export default function GameBoard() {
 
             {currentQuestion && (
                 <QuestionModal
+                    key={`${currentQuestion.categoryIndex}-${currentQuestion.questionIndex}`}
                     isOpen={isModalOpen}
                     onClose={handleCloseModal}
                     question={currentQuestion}
+                    isDailyDouble={currentQuestion.id === dailyDoubleId}
                 />
             )}
         </div>

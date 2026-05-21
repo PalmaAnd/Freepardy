@@ -3,10 +3,14 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import {
     createDefaultGameData,
+    createDefaultTeams,
     GAME_DATA_STORAGE_KEY,
     normalizeGameData,
+    normalizeTeams,
+    TEAM_STORAGE_KEY,
     type GameData,
     type GameSettings,
+    type Team,
 } from "@/lib/game-data";
 
 // Create context
@@ -14,7 +18,9 @@ const GameDataContext = createContext<
     | {
           gameData: GameData;
           gameSettings: GameSettings;
+          teams: Team[];
           setGameData: (data: GameData) => void;
+          setTeams: (teams: Team[]) => void;
           resetGame: () => void;
           markQuestionAsUsed: (
               categoryIndex: number,
@@ -26,38 +32,76 @@ const GameDataContext = createContext<
               question: string,
               answer: string
           ) => void;
+          updateTeamScore: (teamId: number, amount: number) => void;
+          dailyDoubleId: string | null;
       }
     | undefined
 >(undefined);
 
 // Provider component
 export function GameDataProvider({ children }: { children: ReactNode }) {
-    const [gameData, setGameDataState] = useState<GameData>(() => {
-        if (typeof window === "undefined") {
-            return createDefaultGameData();
-        }
+    const [hasMounted, setHasMounted] = useState(false);
+    const [gameData, setGameDataState] = useState<GameData>(createDefaultGameData());
+    const [teams, setTeamsState] = useState<Team[]>(createDefaultTeams());
+    const [dailyDoubleId, setDailyDoubleId] = useState<string | null>(null);
 
+    // Load data from localStorage on mount
+    useEffect(() => {
         const savedData = window.localStorage.getItem(GAME_DATA_STORAGE_KEY);
-        if (!savedData) {
-            return createDefaultGameData();
+        if (savedData) {
+            try {
+                // eslint-disable-next-line react-hooks/set-state-in-effect
+                setGameDataState(normalizeGameData(JSON.parse(savedData)));
+            } catch (error) {
+                console.error("Failed to parse saved game data:", error);
+            }
         }
 
-        try {
-            return normalizeGameData(JSON.parse(savedData));
-        } catch (error) {
-            console.error("Failed to parse saved game data:", error);
-            return createDefaultGameData();
+        const savedTeams = window.localStorage.getItem(TEAM_STORAGE_KEY);
+        if (savedTeams) {
+            try {
+                setTeamsState(normalizeTeams(JSON.parse(savedTeams)));
+            } catch (error) {
+                console.error("Failed to parse saved team data:", error);
+            }
         }
-    });
+
+        const savedDailyDouble = window.localStorage.getItem("jeopardyDailyDoubleId");
+        if (savedDailyDouble) {
+            setDailyDoubleId(savedDailyDouble);
+        }
+
+        setHasMounted(true);
+    }, []);
 
     const setGameData = (data: GameData) => {
         setGameDataState(normalizeGameData(data));
     };
 
+    const setTeams = (newTeams: Team[]) => {
+        setTeamsState(normalizeTeams(newTeams));
+    };
+
     // Save game data to localStorage whenever it changes
     useEffect(() => {
-        localStorage.setItem(GAME_DATA_STORAGE_KEY, JSON.stringify(gameData));
-    }, [gameData]);
+        if (hasMounted) {
+            localStorage.setItem(GAME_DATA_STORAGE_KEY, JSON.stringify(gameData));
+        }
+    }, [gameData, hasMounted]);
+
+    // Save teams to localStorage whenever they change
+    useEffect(() => {
+        if (hasMounted) {
+            localStorage.setItem(TEAM_STORAGE_KEY, JSON.stringify(teams));
+        }
+    }, [teams, hasMounted]);
+
+    // Save daily double ID to localStorage
+    useEffect(() => {
+        if (hasMounted && dailyDoubleId) {
+            localStorage.setItem("jeopardyDailyDoubleId", dailyDoubleId);
+        }
+    }, [dailyDoubleId, hasMounted]);
 
     // Reset game (mark all questions as unused)
     const resetGame = () => {
@@ -72,6 +116,21 @@ export function GameDataProvider({ children }: { children: ReactNode }) {
             })),
         };
         setGameData(resetData);
+
+        // Assign a new random Daily Double
+        const allQuestionIds: string[] = [];
+        resetData.categories.forEach((category) => {
+            category.questions.forEach((question) => {
+                if (question.id) {
+                    allQuestionIds.push(question.id);
+                }
+            });
+        });
+
+        if (allQuestionIds.length > 0) {
+            const randomIndex = Math.floor(Math.random() * allQuestionIds.length);
+            setDailyDoubleId(allQuestionIds[randomIndex]);
+        }
     };
 
     // Mark a question as used
@@ -130,16 +189,29 @@ export function GameDataProvider({ children }: { children: ReactNode }) {
         });
     };
 
+    const updateTeamScore = (teamId: number, amount: number) => {
+        setTeamsState((currentTeams) =>
+            currentTeams.map((team) =>
+                team.id === teamId
+                    ? { ...team, score: team.score + amount }
+                    : team
+            )
+        );
+    };
+
     return (
         <GameDataContext.Provider
             value={{
                 gameData,
                 gameSettings: gameData.settings,
+                teams,
                 setGameData,
+                setTeams,
                 resetGame,
                 markQuestionAsUsed,
                 updateGameSettings,
                 updateFinalJeopardy,
+                updateTeamScore,
             }}
         >
             {children}
