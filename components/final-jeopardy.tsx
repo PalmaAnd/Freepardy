@@ -246,8 +246,20 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
                                     </div>
                                 )}
 
-                                <div className="text-center text-xl sm:text-2xl font-medium mb-8 p-4">
-                                    {gameSettings.finalJeopardyQuestion}
+                                <div className="text-center space-y-4 mb-8">
+                                    {gameSettings.finalJeopardyQuestionImage && (
+                                        <div className="relative w-full max-h-[30vh] flex justify-center overflow-hidden rounded-lg border border-blue-500/20">
+                                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                                            <img 
+                                                src={gameSettings.finalJeopardyQuestionImage} 
+                                                alt="Final Question Image" 
+                                                className="max-w-full h-auto object-contain"
+                                            />
+                                        </div>
+                                    )}
+                                    <div className="text-xl sm:text-2xl font-medium p-4">
+                                        {gameSettings.finalJeopardyQuestion}
+                                    </div>
                                 </div>
 
                                 <div className="space-y-4">
@@ -306,8 +318,20 @@ export default function FinalJeopardy({ onFinish }: FinalJeopardyProps) {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div className="text-center text-2xl font-bold mb-8 p-4 text-green-600">
-                                    {gameSettings.finalJeopardyAnswer}
+                                <div className="text-center space-y-4 mb-8">
+                                    {gameSettings.finalJeopardyAnswerImage && (
+                                        <div className="relative w-full max-h-[30vh] flex justify-center overflow-hidden rounded-lg border border-green-500/20">
+                                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                                            <img 
+                                                src={gameSettings.finalJeopardyAnswerImage} 
+                                                alt="Final Answer Image" 
+                                                className="max-w-full h-auto object-contain"
+                                            />
+                                        </div>
+                                    )}
+                                    <div className="text-2xl font-bold p-4 text-green-600">
+                                        {gameSettings.finalJeopardyAnswer}
+                                    </div>
                                 </div>
 
                                 <div className="space-y-4">

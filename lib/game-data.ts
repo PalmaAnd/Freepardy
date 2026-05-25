@@ -4,7 +4,9 @@ export interface Question {
     id: string;
     value: number;
     question: string;
+    questionImage?: string;
     answer: string;
+    answerImage?: string;
     used: boolean;
 }
 
@@ -19,7 +21,9 @@ export interface GameSettings {
     timerDuration: number;
     finalJeopardyCategory: string;
     finalJeopardyQuestion: string;
+    finalJeopardyQuestionImage?: string;
     finalJeopardyAnswer: string;
+    finalJeopardyAnswerImage?: string;
 }
 
 export interface GameData {
@@ -291,7 +295,9 @@ function normalizeQuestion(input: unknown, questionIndex: number): Question {
         id: typeof source?.id === "string" && source.id ? source.id : uuidv4(),
         value,
         question: typeof source?.question === "string" ? source.question : "",
+        questionImage: typeof source?.questionImage === "string" ? source.questionImage : undefined,
         answer: typeof source?.answer === "string" ? source.answer : "",
+        answerImage: typeof source?.answerImage === "string" ? source.answerImage : undefined,
         used: Boolean(source?.used),
     };
 }
@@ -320,11 +326,15 @@ function normalizeSettings(input: Partial<GameSettings> | undefined): GameSettin
             input.finalJeopardyQuestion.trim()
                 ? input.finalJeopardyQuestion
                 : defaultSettings.finalJeopardyQuestion,
+        finalJeopardyQuestionImage: 
+            typeof input?.finalJeopardyQuestionImage === "string" ? input.finalJeopardyQuestionImage : undefined,
         finalJeopardyAnswer:
             typeof input?.finalJeopardyAnswer === "string" &&
             input.finalJeopardyAnswer.trim()
                 ? input.finalJeopardyAnswer
                 : defaultSettings.finalJeopardyAnswer,
+        finalJeopardyAnswerImage:
+            typeof input?.finalJeopardyAnswerImage === "string" ? input.finalJeopardyAnswerImage : undefined,
     };
 }
 

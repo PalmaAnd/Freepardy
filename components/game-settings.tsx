@@ -35,6 +35,12 @@ export default function GameSettings() {
     const [finalAnswer, setFinalAnswer] = useState(
         gameSettings.finalJeopardyAnswer
     );
+    const [finalQuestionImage, setFinalQuestionImage] = useState(
+        gameSettings.finalJeopardyQuestionImage || ""
+    );
+    const [finalAnswerImage, setFinalAnswerImage] = useState(
+        gameSettings.finalJeopardyAnswerImage || ""
+    );
 
     const openSettings = () => {
         setTimerDuration(gameSettings.timerDuration);
@@ -42,6 +48,8 @@ export default function GameSettings() {
         setFinalCategory(gameSettings.finalJeopardyCategory);
         setFinalQuestion(gameSettings.finalJeopardyQuestion);
         setFinalAnswer(gameSettings.finalJeopardyAnswer);
+        setFinalQuestionImage(gameSettings.finalJeopardyQuestionImage || "");
+        setFinalAnswerImage(gameSettings.finalJeopardyAnswerImage || "");
         setIsOpen(true);
     };
 
@@ -51,7 +59,13 @@ export default function GameSettings() {
             timerDuration: Number.parseInt(timerDuration.toString()) || 15,
         });
 
-        updateFinalJeopardy(finalCategory, finalQuestion, finalAnswer);
+        updateFinalJeopardy(
+            finalCategory,
+            finalQuestion,
+            finalAnswer,
+            finalQuestionImage,
+            finalAnswerImage
+        );
 
         setIsOpen(false);
     };
@@ -162,6 +176,19 @@ export default function GameSettings() {
                         </div>
 
                         <div className="space-y-2">
+                            <Label htmlFor="final-question-image" className="text-blue-200">
+                                Question Image URL (optional)
+                            </Label>
+                            <Input
+                                id="final-question-image"
+                                value={finalQuestionImage}
+                                onChange={(e) => setFinalQuestionImage(e.target.value)}
+                                placeholder="/images/final-q.png or https://..."
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
                             <Label htmlFor="final-answer" className="text-blue-200">
                                 Final Jeopardy Answer
                             </Label>
@@ -169,6 +196,19 @@ export default function GameSettings() {
                                 id="final-answer"
                                 value={finalAnswer}
                                 onChange={(e) => setFinalAnswer(e.target.value)}
+                                className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
+                            />
+                        </div>
+
+                        <div className="space-y-2">
+                            <Label htmlFor="final-answer-image" className="text-blue-200">
+                                Answer Image URL (optional)
+                            </Label>
+                            <Input
+                                id="final-answer-image"
+                                value={finalAnswerImage}
+                                onChange={(e) => setFinalAnswerImage(e.target.value)}
+                                placeholder="/images/final-a.png or https://..."
                                 className="bg-blue-900/50 border-blue-500/30 text-blue-100 focus-visible:ring-yellow-500"
                             />
                         </div>

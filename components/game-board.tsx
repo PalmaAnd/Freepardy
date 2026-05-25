@@ -17,7 +17,9 @@ export default function GameBoard() {
         value: number;
         used: boolean;
         question: string;
+        questionImage?: string;
         answer: string;
+        answerImage?: string;
         categoryIndex: number;
         questionIndex: number;
     } | null>(null);
@@ -39,7 +41,9 @@ export default function GameBoard() {
             categoryTitle: category.title,
             value: question.value,
             question: question.question,
+            questionImage: question.questionImage,
             answer: question.answer,
+            answerImage: question.answerImage,
             used: question.used,
             categoryIndex,
             questionIndex,

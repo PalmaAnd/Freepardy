@@ -30,7 +30,9 @@ const GameDataContext = createContext<
           updateFinalJeopardy: (
               category: string,
               question: string,
-              answer: string
+              answer: string,
+              questionImage?: string,
+              answerImage?: string
           ) => void;
           updateTeamScore: (teamId: number, amount: number) => void;
           dailyDoubleId: string | null;
@@ -176,7 +178,9 @@ export function GameDataProvider({ children }: { children: ReactNode }) {
     const updateFinalJeopardy = (
         category: string,
         question: string,
-        answer: string
+        answer: string,
+        questionImage?: string,
+        answerImage?: string
     ) => {
         setGameData({
             ...gameData,
@@ -185,6 +189,8 @@ export function GameDataProvider({ children }: { children: ReactNode }) {
                 finalJeopardyCategory: category,
                 finalJeopardyQuestion: question,
                 finalJeopardyAnswer: answer,
+                finalJeopardyQuestionImage: questionImage,
+                finalJeopardyAnswerImage: answerImage,
             },
         });
     };
@@ -212,6 +218,7 @@ export function GameDataProvider({ children }: { children: ReactNode }) {
                 updateGameSettings,
                 updateFinalJeopardy,
                 updateTeamScore,
+                dailyDoubleId,
             }}
         >
             {children}

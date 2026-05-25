@@ -21,7 +21,9 @@ interface QuestionModalProps {
         categoryTitle: string;
         value: number;
         question: string;
+        questionImage?: string;
         answer: string;
+        answerImage?: string;
     };
     isDailyDouble?: boolean;
 }
@@ -209,8 +211,20 @@ export default function QuestionModal({
                                     </div>
                                 )}
 
-                                <div className="text-center text-xl md:text-2xl font-bold p-6 bg-blue-900/30 rounded-xl border border-blue-500/20 shadow-inner leading-relaxed">
-                                    {question.question}
+                                <div className="text-center space-y-4">
+                                    {question.questionImage && (
+                                        <div className="relative w-full max-h-[30vh] flex justify-center mb-4 overflow-hidden rounded-lg border border-blue-500/30">
+                                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                                            <img 
+                                                src={question.questionImage} 
+                                                alt="Question Image" 
+                                                className="max-w-full h-auto object-contain shadow-lg shadow-blue-500/20"
+                                            />
+                                        </div>
+                                    )}
+                                    <div className="text-xl md:text-2xl font-bold p-6 bg-blue-900/30 rounded-xl border border-blue-500/20 shadow-inner leading-relaxed">
+                                        {question.question}
+                                    </div>
                                 </div>
 
                                 <AnimatePresence>
@@ -219,9 +233,21 @@ export default function QuestionModal({
                                             <motion.div
                                                 initial={{ opacity: 0, y: 20 }}
                                                 animate={{ opacity: 1, y: 0 }}
-                                                className="text-center font-black text-yellow-500 text-xl md:text-2xl p-6 bg-blue-900/50 rounded-xl border border-yellow-500/30 gold-glow italic uppercase tracking-tight"
+                                                className="space-y-4"
                                             >
-                                                {question.answer}
+                                                {question.answerImage && (
+                                                    <div className="relative w-full max-h-[30vh] flex justify-center overflow-hidden rounded-lg border border-yellow-500/30">
+                                                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                                                        <img 
+                                                            src={question.answerImage} 
+                                                            alt="Answer Image" 
+                                                            className="max-w-full h-auto object-contain gold-glow"
+                                                        />
+                                                    </div>
+                                                )}
+                                                <div className="text-center font-black text-yellow-500 text-xl md:text-2xl p-6 bg-blue-900/50 rounded-xl border border-yellow-500/30 gold-glow italic uppercase tracking-tight">
+                                                    {question.answer}
+                                                </div>
                                             </motion.div>
 
                                             <div className="space-y-4">

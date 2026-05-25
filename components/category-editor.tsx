@@ -200,6 +200,30 @@ export default function CategoryEditor() {
 
                                         <div>
                                             <label className="block text-sm font-medium mb-1">
+                                                Question Image URL (optional)
+                                            </label>
+                                            <Input
+                                                value={
+                                                    gameData.categories[
+                                                        selectedCategory
+                                                    ].questions[
+                                                        selectedQuestion
+                                                    ].questionImage || ""
+                                                }
+                                                onChange={(e) =>
+                                                    updateQuestion(
+                                                        selectedCategory,
+                                                        selectedQuestion,
+                                                        "questionImage",
+                                                        e.target.value
+                                                    )
+                                                }
+                                                placeholder="/images/question1.png or https://..."
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label className="block text-sm font-medium mb-1">
                                                 Answer
                                             </label>
                                             <Textarea
@@ -219,6 +243,30 @@ export default function CategoryEditor() {
                                                     )
                                                 }
                                                 rows={2}
+                                            />
+                                        </div>
+
+                                        <div>
+                                            <label className="block text-sm font-medium mb-1">
+                                                Answer Image URL (optional)
+                                            </label>
+                                            <Input
+                                                value={
+                                                    gameData.categories[
+                                                        selectedCategory
+                                                    ].questions[
+                                                        selectedQuestion
+                                                    ].answerImage || ""
+                                                }
+                                                onChange={(e) =>
+                                                    updateQuestion(
+                                                        selectedCategory,
+                                                        selectedQuestion,
+                                                        "answerImage",
+                                                        e.target.value
+                                                    )
+                                                }
+                                                placeholder="/images/answer1.png or https://..."
                                             />
                                         </div>
 
