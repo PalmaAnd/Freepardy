@@ -39,7 +39,7 @@
         "@eslint/eslintrc": "^3",
         "@eslint/js": "^9.34.0",
         "@tailwindcss/postcss": "^4.2.1",
-        "@types/node": "^25",
+        "@types/node": "^26",
         "@types/react": "^19",
         "@types/react-dom": "^19",
         "eslint": "^9.34.0",
