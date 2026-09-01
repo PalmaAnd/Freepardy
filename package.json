@@ -46,7 +46,7 @@
         "eslint-config-next": "^16.2.7",
         "eslint-plugin-react": "^7.37.5",
         "globals": "^17.4.0",
-        "postcss": "^8.5.23",
+        "postcss": "^8.5.26",
         "tailwindcss": "^4.2.1",
         "typescript": "^7",
         "typescript-eslint": "^8.57.1"
